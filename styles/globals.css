@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  /* modify a base style e.g [h1,p,label] */
+}
+
+@layer utilities {
+  /* simple utility-base classes */
+}
+
+@layer components {
+  /* add your own extracted components */
+  .padding-x {
+    @apply px-6 sm:px-16;
+  }
+
+  .padding-y {
+    @apply py-4;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .custom-btn {
+    @apply relative flex flex-row items-center justify-center px-6 py-3 outline-none;
+  }
+}
