@@ -1,6 +1,6 @@
 .ttInputField {
   @apply rounded-md w-full border-solid border-x-2 border-y-2 px-2 py-6 font-mondwest text-lg bg-transparent cursor-edit-cursor 
-  hover:outline hover:border-transparent hover:outline-2 hover:cursor-auto;
+  focus:outline focus:border-transparent focus:outline-2 focus:cursor-auto;
 }
 
 .ttInputFieldDefault {
