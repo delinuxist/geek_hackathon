@@ -21,7 +21,7 @@ const Footer = () => {
           </motion.div>
           <div className='padding-x' >
             <p>Next Revolution in Software Engineering</p>
-            <div className='flex flex-wrap justify-between mt-10 text-disruption'>
+            <div className='flex flex-wrap justify-between gap-8 mt-10 text-disruption'>
               <div className='flex flex-col '>
                 <p className='font-bold '>Email us</p>
                 <p>contact@turntabl.io</p>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         {/* right content */}
-        <div className='flex flex-wrap flex-1 w-full gap-10 padding-x md:justify-end max-md:mt-10'>
+        <div className='flex flex-wrap flex-1 w-full gap-5 xsm:gap-20 padding-x md:justify-end max-md:mt-10'>
           {footerLinks.map(link => (
             <div key={link.title} className=' flex flex-col gap-2 min-w-[170px]'>
               <h3 className='font-bold'>
