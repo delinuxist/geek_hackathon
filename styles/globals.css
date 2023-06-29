@@ -10,6 +10,9 @@
 
 @layer base {
   /* modify a base style e.g [h1,p,label] */
+  h1 {
+    @apply text-[60px] font-bold font-mondwest;
+  }
 }
 
 @layer utilities {
