@@ -6,7 +6,7 @@ import CustomButton from "@/components/utils/CustomButton";
 export default function FormSection() {
   const styles = {
     ttContactFormRowItem:
-      "flex flex-col flex-grow flex-shrink basis-[400px] self-stretch m-3 p-2",
+      "flex flex-col flex-grow flex-shrink basis-[500px] self-stretch m-3 p-2",
   };
 
   return (
