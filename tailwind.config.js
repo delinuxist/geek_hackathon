@@ -1,3 +1,5 @@
+const { url } = require("inspector");
+
 /** @type {import('tailwindcss').Config} */
 const { screens } = require("tailwindcss/defaultTheme");
 module.exports = {
@@ -25,6 +27,9 @@ module.exports = {
         disruption: "#ccff50",
         insightful: "#ffd6bb",
         welcoming: "#b8ffee",
+      },
+      cursor: {
+        "edit-cursor": 'url("/assets/img/ttDigitalHandSm.png"), auto',
       },
     },
   },
