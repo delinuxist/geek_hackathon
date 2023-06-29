@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/* right conten */}
+        {/* right content */}
         <div className='flex flex-wrap flex-1 w-full gap-10 padding-x md:justify-end max-md:mt-10'>
           {footerLinks.map(link => (
             <div key={link.title} className=' flex flex-col gap-2 min-w-[170px]'>
