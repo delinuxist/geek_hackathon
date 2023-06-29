@@ -42,14 +42,20 @@
   }
 
   .nav-link-indicator {
-    @apply h-1 w-1 bg-pixel-black rounded-full -bottom-1 left-1/2 -translate-x-1/2 invisible;
+    @apply h-1.5 w-1.5 bg-pixel-black rounded-full -bottom-2 left-1/2 -translate-x-1/2 invisible opacity-0 transition-all;
+    @apply duration-300;
   }
-  .nav-link-indicator::before {
-    content: '';
-    @apply h-full w-full absolute rounded-full bg-pixel-black;
+  .nav-link:hover .nav-link-indicator, .nav-link-selected .nav-link-indicator {
+    @apply visible opacity-100;
   }
-  .nav-link-indicator::after {
+  .nav-link:hover .nav-link-indicator::before, .nav-link-selected .nav-link-indicator::before {
+    @apply -translate-x-3 opacity-100;
+  }
+  .nav-link:hover .nav-link-indicator::after, .nav-link-selected .nav-link-indicator::after {
+    @apply translate-x-3 opacity-100;
+  }
+  .nav-link-indicator::before, .nav-link-indicator::after {
     content: '';
-    @apply h-full w-full absolute rounded-full bg-pixel-black;
+    @apply h-full w-full absolute rounded-full bg-pixel-black opacity-0 transition-all duration-300;
   }
 }
