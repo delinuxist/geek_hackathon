@@ -10,6 +10,9 @@
 
 @layer base {
   /* modify a base style e.g [h1,p,label] */
+  body {
+    @apply relative;
+  }
 }
 
 @layer utilities {
@@ -36,5 +39,17 @@
 
   .custom-btn {
     @apply relative flex flex-row items-center justify-center px-6 py-3 outline-none;
+  }
+
+  .nav-link-indicator {
+    @apply h-1 w-1 bg-pixel-black rounded-full -bottom-1 left-1/2 -translate-x-1/2 invisible;
+  }
+  .nav-link-indicator::before {
+    content: '';
+    @apply h-full w-full absolute rounded-full bg-pixel-black;
+  }
+  .nav-link-indicator::after {
+    content: '';
+    @apply h-full w-full absolute rounded-full bg-pixel-black;
   }
 }
