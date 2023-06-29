@@ -7,7 +7,7 @@ type inputProps = {
 
 export default function TextField(props: inputProps) {
   return (
-    <textarea className={`${styles.ttInputField} ${props.scheme=="dark"? styles.ttInputFieldDark: styles.ttInputFieldDefault} ${"h-40"}`}
+    <textarea className={`${styles.ttInputField} ${props.scheme=="dark"? styles.ttInputFieldDark: styles.ttInputFieldDefault} h-40`}
     placeholder={props.placeholder} />
   )
 }
