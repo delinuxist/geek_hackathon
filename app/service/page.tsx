@@ -43,10 +43,10 @@ export default function Service() {
                         <div>
                             <h3 className="text-pixel-black text-2xl font-bold">Partnerships</h3>
                             <p className="text-pixel-black">
-                                In today's fast-paced and interconnected business landscape, successful companies
+                                In today&apos;s fast-paced and interconnected business landscape, successful companies
                                 understand the power of collaboration and strategic partnerships. At Turntabl, we have
                                 reimagined the concept of partnership and developed a unique approach known as
-                                <strong>"Partnership as a Service."</strong>
+                                <strong> &ldquo;Partnership as a Service.&rdquo;</strong>
                                 <br/>
                                 Our Partnership as a Service offering goes beyond the
                                 traditional vendor-client relationship, aiming to foster mutually beneficial and
@@ -64,7 +64,7 @@ export default function Service() {
                         <div>
                             <h3 className="text-pixel-black text-2xl font-bold">Project Management</h3>
                             <p className="text-pixel-black">
-                                In today's dynamic business environment, effective project management plays a pivotal
+                                In today&apos;s dynamic business environment, effective project management plays a pivotal
                                 role in driving organizational success. At Turntabl, we understand the
                                 complexities and challenges associated with managing projects.
                                 <br/>
@@ -72,7 +72,7 @@ export default function Service() {
                                 inception and definition to delivery, production and maintenance - our style is clean
                                 lines, efficient code, empowered users.
                                 With our expertise, proven methodologies, and dedicated professionals, we empower
-                                businesses to streamline their projects, achieve objectives, and exceed stakeholders'
+                                businesses to streamline their projects, achieve objectives, and exceed stakeholders&apos;
                                 expectations.
                             </p>
                         </div>
