@@ -1,21 +1,21 @@
 export const navLinks = [
   {
     title: "About Us",
-    url: "/about"
+    url: "/about",
   },
   {
-    title: "Service",
-    url: "/services"
+    title: "Services",
+    url: "/services",
   },
   {
     title: "Clients",
-    url: "/clients"
+    url: "/clients",
   },
   {
     title: "Contact Us",
-    url: "/contact"
-  }
-]
+    url: "/contact",
+  },
+];
 
 export const footerLinks = [
   {
