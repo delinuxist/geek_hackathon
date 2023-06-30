@@ -21,3 +21,20 @@ export const slideIn = (
     },
   };
 };
+
+
+export const fadeIn = (delay: number, duration: number) => {
+  return {
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+      },
+    },
+  };
+};
