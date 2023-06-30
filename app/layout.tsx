@@ -1,60 +1,61 @@
-import { Footer, Navbar } from '../components/layout'
-import '../styles/globals.css'
-import localFont from 'next/font/local'
-import { Work_Sans } from 'next/font/google'
+import { Footer, Navbar } from "../components/layout";
+import "../styles/globals.css";
+import localFont from "next/font/local";
+import { Work_Sans } from "next/font/google";
 
 const neuebit = localFont({
   src: [
     {
-      path: '../public/assets/fonts/PPNeueBit-Regular.woff2',
-      weight: '400',
-      style: 'normal'
+      path: "../public/assets/fonts/PPNeueBit-Regular.woff2",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../public/assets/fonts/PPNeueBit-Bold.woff2',
-      weight: '700',
-      style: 'normal'
-    }
+      path: "../public/assets/fonts/PPNeueBit-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
   ],
-  variable: '--font-neuebit'
-})
+  variable: "--font-neuebit",
+});
 
 const mondwest = localFont({
   src: [
     {
-      path: '../public/assets/fonts/PPMondwest-Regular.woff2',
-      weight: '400',
-      style: 'normal'
+      path: "../public/assets/fonts/PPMondwest-Regular.woff2",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../public/assets/fonts/PPMondwest-Bold.woff2',
-      weight: '700',
-      style: 'normal'
-    }
+      path: "../public/assets/fonts/PPMondwest-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
   ],
-  variable: '--font-mondwest'
-})
+  variable: "--font-mondwest",
+});
 
-const workSans = Work_Sans({ subsets: ['latin'] })
+const workSans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Turntabl',
-  description: 'Software Agency',
-
-}
+  title: "Turntabl",
+  description: "Software Agency",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={`${neuebit.variable} ${mondwest.variable} ${workSans.className}`}>
+      <body
+        className={`${neuebit.variable} ${mondwest.variable} ${workSans.className} min-h-screen flex flex-col`}
+      >
         <Navbar />
-        {children}
+        <main className="w-full flex-1">{children}</main>
         <Footer />
       </body>
     </html>
-  )
+  );
 }
