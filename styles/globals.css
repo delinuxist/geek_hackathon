@@ -40,4 +40,8 @@
   .custom-btn {
     @apply relative flex flex-row items-center justify-center px-6 py-3 outline-none;
   }
+
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }
