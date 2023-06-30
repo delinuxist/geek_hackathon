@@ -37,17 +37,15 @@ export default function Service() {
             <div className="p-12 text-4xl font-bold bg-cover bg-inspiration bg-opacity-50 text-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div>
-                        <h2 className="px-12 py-5 text-4xl font-medium text-start">
+                        <h2 className="font-neuebit px-12 py-5 text-7xl font-bold text-start">
                             All the Services <br/> you need
                         </h2>
-                        <p className="text-start text-xs font-light px-12">
+                        <p className="text-start text-sm font-light px-12">
                             From strategic consulting to cutting-edge technology solutions, we have you covered. Whether
                             you need assistance with software development, IT infrastructure, project management,
                             digital marketing, or any other aspect of your business, we have the capabilities to provide
                             it. With our diverse expertise and commitment to excellence, we strive to be a one-stop
                             destination for all your business requirements.
-
-
                         </p>
                     </div>
                     <div className="p-2">
@@ -58,7 +56,7 @@ export default function Service() {
 
             <section className="container mx-auto py-8">
                 <div className="mb-4 text-center">
-                    <h1 className='text-shadow text-pixel-black font-medium text-4xl'>OUR SERVICES</h1>
+                    <h1 className='font-neuebit text-shadow text-pixel-black font-bold text-5xl'>OUR SERVICES</h1>
                 </div>
 
                 <div className="p-12 serv-sec mb-2 bg-transparent">
@@ -69,7 +67,7 @@ export default function Service() {
                             </motion.div>
                         </div>
                         <div>
-                            <h3 className="text-pixel-black text-2xl font-bold">Partnerships</h3>
+                            <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Partnerships</h3>
                             <br/>
                             <p className="text-pixel-black">
                                 In today&apos;s fast-paced and interconnected business landscape, successful companies
@@ -99,7 +97,7 @@ export default function Service() {
                 <div className="p-12 serv-sec mb-2 bg-transparent">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                         <div>
-                            <h3 className="text-pixel-black text-2xl font-bold">Project Management</h3>
+                            <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Project Management</h3>
                             <br/>
                             <p className="text-pixel-black">
                                 In today&apos;s dynamic business environment, effective project management plays a
@@ -141,7 +139,7 @@ export default function Service() {
                             </motion.div>
                         </div>
                         <div>
-                            <h3 className="text-pixel-black text-2xl font-bold">Development</h3>
+                            <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Development</h3>
                             <br/>
                             <p className="text-pixel-black">
                                 At Turntabl, we specialize in delivering cutting-edge software solutions
@@ -170,7 +168,7 @@ export default function Service() {
                 <div className="p-12 serv-sec mb-2 bg-transparent">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                         <div>
-                            <h3 className="text-pixel-black text-2xl font-bold">Software Consultancy</h3>
+                            <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Software Consultancy</h3>
                             <br/>
                             <p className="text-pixel-black">
                                 At Turntabl, we understand that businesses face unique challenges and require
@@ -192,7 +190,7 @@ export default function Service() {
                         </div>
                         <div>
                             <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
-                                <Image src="/assets/img/IMG_9383.jpg" width={500} height={500} alt="Your Image"/>
+                                <Image src="/assets/img/IMG_9005.jpg" width={500} height={500} alt="Your Image"/>
                             </motion.div>
                         </div>
                     </div>
