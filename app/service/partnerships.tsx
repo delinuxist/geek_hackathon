@@ -4,7 +4,7 @@ import React from "react";
 const Partnership = () => {
     return (
         <div>
-            <h2 className='text-2xl font-bold font-mondwest'>Partnerships</h2>
+            <h2 className='text-4xl font-bold font-mondwest'>Partnerships</h2>
             <p className='text-8'>
                 <br/>
                 Turntabl&apos;s <strong>&ldquo;Partnership as a Service&rdquo;</strong> prioritizes building strong

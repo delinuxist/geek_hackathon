@@ -4,7 +4,7 @@ import React from "react";
 const Development = () => {
     return (
         <div>
-            <h2 className='text-2xl font-bold font-mondwest'>Development</h2>
+            <h2 className='text-4xl font-bold font-mondwest'>Development</h2>
             <p>
                 <br/>
                 Our services are tailored to provide a perfect fit for each organization, whether it&apos;s web

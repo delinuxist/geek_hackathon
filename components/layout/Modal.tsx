@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { AnimatePresence, motion } from 'framer-motion';
 
 interface ModalProps {
@@ -19,21 +19,35 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose, content }) => {
         }
     }
 
+    useEffect(() => {
+        const handleScroll = (event: Event) => {
+            if (isVisible) {
+                event.preventDefault();
+            }
+        };
+
+        if (isVisible) {
+            document.body.style.overflow = "hidden";
+            window.addEventListener("scroll", handleScroll, { passive: false });
+        }
+
+        return () => {
+            document.body.style.overflow = "auto";
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [isVisible]);
+
     return (
         <AnimatePresence>
             {isVisible && (
                 <motion.div
                     className="fixed inset-0 bg-pixel-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center"
-                    id='wrapper'
                     onClick={handleClose}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    <div className=" w-[30%] flex flex-col" ref={contentRef}>
-                        <button className="text-white text-xl place-self-end" onClick={onClose}>
-                            &#10006;
-                        </button>
+                    <div className="bg-white rounded shadow-lg w-full sm:w-[80%] md:w-[60%] lg:w-[50%]" ref={contentRef}>
                         <div className="bg-white p-2 rounded">{content}</div>
                     </div>
                 </motion.div>
