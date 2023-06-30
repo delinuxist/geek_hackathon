@@ -43,8 +43,16 @@ export default function Service() {
                         <div>
                             <h3 className="text-pixel-black text-2xl font-bold">Partnerships</h3>
                             <p className="text-pixel-black">
-                                Partner with Turntabl today and design low-cost, high-quality technology ethically and
-                                sustainably.
+                                In today's fast-paced and interconnected business landscape, successful companies
+                                understand the power of collaboration and strategic partnerships. At Turntabl, we have
+                                reimagined the concept of partnership and developed a unique approach known as
+                                <strong>"Partnership as a Service."</strong>
+                                <br/>
+                                Our Partnership as a Service offering goes beyond the
+                                traditional vendor-client relationship, aiming to foster mutually beneficial and
+                                long-lasting collaborations that drive innovation, growth, and shared success.
+
+                                Partner with Turntabl today and design low-cost, high-quality technology ethically and sustainably.
                             </p>
                         </div>
                     </div>
@@ -56,9 +64,16 @@ export default function Service() {
                         <div>
                             <h3 className="text-pixel-black text-2xl font-bold">Project Management</h3>
                             <p className="text-pixel-black">
+                                In today's dynamic business environment, effective project management plays a pivotal
+                                role in driving organizational success. At Turntabl, we understand the
+                                complexities and challenges associated with managing projects.
+                                <br/>
                                 We cooperate with you throughout the project life-cycle in small, committed teams. From
                                 inception and definition to delivery, production and maintenance - our style is clean
                                 lines, efficient code, empowered users.
+                                With our expertise, proven methodologies, and dedicated professionals, we empower
+                                businesses to streamline their projects, achieve objectives, and exceed stakeholders'
+                                expectations.
                             </p>
                         </div>
                         <div>
