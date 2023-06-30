@@ -2,9 +2,13 @@
 import React from 'react';
 import Image from 'next/image';
 import {motion} from 'framer-motion';
-import {fadeIn} from '@/core/utils/motion';
+import {bounceIn, rotate} from '@/core/utils/motion';
+import {useInView} from "react-intersection-observer";
 
 export default function Service() {
+
+    const [ref, inView] = useInView();
+
     return (
         <section className="bg-white h-full">
             <div className="p-12 text-4xl font-bold bg-cover bg-inspiration bg-opacity-50 text-center">
@@ -25,14 +29,14 @@ export default function Service() {
             </div>
 
             <section className="container mx-auto py-8">
-                <div className="text-pixel-black font-bold text-4xl mb-4 text-center">
-                    <h1>OUR SERVICES</h1>
+                <div className="mb-4 text-center">
+                    <h1 className='text-shadow text-pixel-black font-medium text-4xl'>OUR SERVICES</h1>
                 </div>
 
                 <div className="p-12 serv-sec mb-2 bg-transparent">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                         <div>
-                            <motion.div initial="hidden" whileInView="show" variants={fadeIn(0, 1.2)}>
+                            <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
                                 <Image src="/assets/img/service-header.jpg" width={500} height={500} alt="Your Image"/>
                             </motion.div>
                         </div>
@@ -58,7 +62,7 @@ export default function Service() {
                             </p>
                         </div>
                         <div>
-                            <motion.div initial="hidden" whileInView="show" variants={fadeIn(0, 1.2)}>
+                            <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
                                 <Image src="/assets/img/header-approach.jpg" width={500} height={500} alt="Your Image"/>
                             </motion.div>
                         </div>
@@ -69,7 +73,7 @@ export default function Service() {
                 <div className="p-12 serv-sec mb-2 bg-transparent">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                         <div>
-                            <motion.div initial="hidden" whileInView="show" variants={fadeIn(0, 1.2)}>
+                            <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
                                 <Image src="/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg"
                                        width={500} height={500} alt="Your Image"/>
                             </motion.div>
@@ -96,7 +100,7 @@ export default function Service() {
                             </p>
                         </div>
                         <div>
-                            <motion.div initial="hidden" whileInView="show" variants={fadeIn(0, 1.2)}>
+                            <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
                                 <Image src="/assets/img/IMG_9383.jpg" width={500} height={500} alt="Your Image"/>
                             </motion.div>
                         </div>
