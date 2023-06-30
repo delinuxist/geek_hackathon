@@ -45,7 +45,7 @@
   }
 
   .nav-link-indicator {
-    @apply h-1.5 w-1.5 bg-pixel-black rounded-full -bottom-2 left-1/2 -translate-x-1/2 invisible opacity-0 transition-all;
+    @apply h-1.5 w-1.5 bg-inspiration rounded-full -bottom-2 left-1/2 -translate-x-1/2 invisible opacity-0 transition-all;
     @apply duration-300;
   }
   .nav-link:hover .nav-link-indicator, .nav-link-selected .nav-link-indicator {
@@ -59,10 +59,10 @@
   }
   .nav-link-indicator::before, .nav-link-indicator::after {
     content: '';
-    @apply h-full w-full absolute rounded-full bg-pixel-black opacity-0 transition-all duration-300;
+    @apply h-full w-full absolute rounded-full bg-inspiration opacity-0 transition-all duration-300;
   }
   .nav-mobile-link {
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #000 50%);
     background-size: 230%;
   }
   .nav-mobile-link:hover {
