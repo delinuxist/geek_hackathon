@@ -1,7 +1,7 @@
 'use client'
 import React, {ReactNode, useState} from 'react';
 import Image from 'next/image';
-import {motion, AnimatePresence} from 'framer-motion';
+import {motion} from 'framer-motion';
 import {bounceIn} from '@/core/utils/motion';
 import Link from "next/link";
 import Modal from '../../components/layout/Modal'
@@ -26,7 +26,6 @@ export default function Service() {
         }
         setShowModal(true);
     };
-
 
     const closeModal = () => {
         setShowModal(false);
