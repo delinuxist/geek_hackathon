@@ -44,6 +44,7 @@
     @apply relative flex flex-row items-center justify-center px-6 py-3 outline-none;
   }
 
+
   .nav-link-indicator {
     @apply h-1.5 w-1.5 bg-inspiration rounded-full -bottom-2 left-1/2 -translate-x-1/2 invisible opacity-0 transition-all;
     @apply duration-300;
@@ -68,5 +69,8 @@
   .nav-mobile-link:hover {
     background-position: 100%;
     @apply -translate-x-1 text-disruption;
+
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
