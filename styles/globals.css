@@ -69,7 +69,7 @@
   .nav-mobile-link:hover {
     background-position: 100%;
     @apply -translate-x-1 text-disruption;
-
+  }
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
