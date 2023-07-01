@@ -3,7 +3,7 @@ import React from "react";
 
 const ProjectManagement = () => {
     return (
-        <div>
+        <div className='rounded-2xl bg-insightful p-5'>
             <h2 className='text-4xl font-bold font-mondwest'>Project Management</h2>
             <p>
                 <br/>
@@ -12,15 +12,10 @@ const ProjectManagement = () => {
                 planning, resource allocation, risk management, and stakeholder communication.
                 <br/>
                 We utilize industry-leading tools and methodologies to ensure efficient project execution, timely
-                delivery, and high-quality outcomes.
-
-                Our services are scalable and adaptable, accommodating changing project requirements. We prioritize
-                value delivery,
-                aligning project outcomes with clients&apos; strategic objectives.
+                delivery, and high-quality outcomes. Our services are scalable and adaptable, accommodating changing project requirements.
                 <br/><br/>
                 As a trusted provider, Turntabl is dedicated to empowering organizations, driving efficiency, and
-                achieving project success. With our expert project management professionals, tailored approaches, and
-                comprehensive support, Turntabl guides organizations through every step of the project journey.
+                achieving project success.
                 <br/><br/>
                 <strong><em>Experience streamlined success with Turntabl&apos;s Project Management Service and unlock
                     the full

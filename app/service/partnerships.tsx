@@ -3,7 +3,7 @@ import React from "react";
 
 const Partnership = () => {
     return (
-        <div>
+        <div className='rounded-2xl bg-disruption p-5'>
             <h2 className='text-4xl font-bold font-mondwest'>Partnerships</h2>
             <p className='text-8'>
                 <br/>

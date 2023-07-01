@@ -3,7 +3,7 @@ import React from "react";
 
 const SoftwareConsultancy = () => {
     return (
-        <div>
+        <div className='rounded-2xl bg-black text-white p-5'>
             <h2 className='text-4xl font-bold font-mondwest'>Software Consultancy</h2>
             <p>
                 <br/>

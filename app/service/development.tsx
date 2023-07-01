@@ -3,7 +3,7 @@ import React from "react";
 
 const Development = () => {
     return (
-        <div>
+        <div className='rounded-2xl bg-welcoming p-5'>
             <h2 className='text-4xl font-bold font-mondwest'>Development</h2>
             <p>
                 <br/>

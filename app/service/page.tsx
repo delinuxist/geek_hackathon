@@ -34,19 +34,21 @@ export default function Service() {
 
     return (
         <section className="bg-white h-full">
-            <div className="p-12 text-4xl font-bold bg-cover bg-inspiration bg-opacity-50 text-center">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div className="p-3 text-4xl font-bold bg-cover bg-inspiration bg-opacity-50 text-center">
+                <div className="p-1 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div>
-                        <h2 className="font-neuebit px-12 py-5 text-7xl font-bold text-start">
+                        <h2 className="font-neuebit px-5 text-7xl font-bold text-start">
                             All the Services <br/> you need
                         </h2>
-                        <p className="text-start text-sm font-light px-12">
+                        <p className="text-start text-sm font-light px-5">
                             From strategic consulting to cutting-edge technology solutions, we have you covered. Whether
                             you need assistance with software development, IT infrastructure, project management,
                             digital marketing, or any other aspect of your business, we have the capabilities to provide
                             it. With our diverse expertise and commitment to excellence, we strive to be a one-stop
                             destination for all your business requirements.
                         </p>
+
+                    {/*    Button Over Here    */}
                     </div>
                     <div className="p-2">
                         <Image src="/assets/img/img.png" width={500} height={500} alt="Your Image"/>
@@ -59,7 +61,7 @@ export default function Service() {
                     <h1 className='font-neuebit text-shadow text-pixel-black font-bold text-5xl'>OUR SERVICES</h1>
                 </div>
 
-                <div className="p-12 serv-sec mb-2 bg-transparent">
+                <div className="p-6 serv-sec mb-2 bg-transparent">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                         <div>
                             <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
@@ -94,7 +96,7 @@ export default function Service() {
                 </div>
                 <hr className="border-gray-300 my-4 w-full"/>
 
-                <div className="p-12 serv-sec mb-2 bg-transparent">
+                <div className="p-6 serv-sec mb-2 bg-transparent">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                         <div>
                             <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Project Management</h3>
@@ -130,7 +132,7 @@ export default function Service() {
                 </div>
                 <hr className="border-gray-300 my-4 w-full"/>
 
-                <div className="p-12 serv-sec mb-2 bg-transparent">
+                <div className="p-6 serv-sec mb-2 bg-transparent">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                         <div>
                             <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
@@ -165,7 +167,7 @@ export default function Service() {
                 </div>
                 <hr className="border-gray-300 my-4 w-full"/>
 
-                <div className="p-12 serv-sec mb-2 bg-transparent">
+                <div className="p-5 serv-sec mb-2 bg-transparent">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                         <div>
                             <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Software Consultancy</h3>
