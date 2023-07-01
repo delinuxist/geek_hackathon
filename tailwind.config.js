@@ -1,5 +1,3 @@
-const { url } = require("inspector");
-
 /** @type {import('tailwindcss').Config} */
 const { screens } = require("tailwindcss/defaultTheme");
 module.exports = {
