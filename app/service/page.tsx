@@ -34,8 +34,8 @@ export default function Service() {
 
     return (
         <section className="bg-white h-full">
-            <div className="p-3 text-4xl font-bold bg-cover bg-inspiration bg-opacity-50 text-center">
-                <div className="p-1 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div className="p-12 text-4xl font-bold bg-cover bg-inspiration bg-opacity-50 text-center">
+                <div className="py-5 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div>
                         <h2 className="font-neuebit px-5 text-7xl font-bold text-start">
                             All the Services <br/> you need
