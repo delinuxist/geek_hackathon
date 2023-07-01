@@ -47,8 +47,8 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose, content }) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    <div className="bg-white rounded shadow-lg w-full sm:w-[80%] md:w-[60%] lg:w-[50%]" ref={contentRef}>
-                        <div className="bg-white p-2 rounded">{content}</div>
+                    <div className="bg-transparent shadow-lg w-full sm:w-[80%] md:w-[60%] lg:w-[50%]" ref={contentRef}>
+                        <div className="bg-transparent p-2 rounded overflow-y-auto max-h-[80vh]">{content}</div>
                     </div>
                 </motion.div>
             )}
