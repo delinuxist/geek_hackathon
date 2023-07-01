@@ -1,7 +1,10 @@
 import React from 'react'
+import { AboutPage } from '../../components/pages'
 
 export default function About() {
   return (
-    <div>About</div>
+    <main className='relative'>
+      <AboutPage />
+    </main>
   )
 }

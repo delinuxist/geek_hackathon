@@ -37,7 +37,7 @@ export const footerLinks = [
   {
     title: "Socials",
     links: [
-      { title: "LindedIn", url: "https://linkedin.com/company/turntabl" },
+      { title: "LinkedIn", url: "https://linkedin.com/company/turntabl" },
       { title: "Twitter", url: "https://twitter.com/turntablio" },
       { title: "Youtube", url: "https://youtube.com/@turntablgh" },
       { title: "Github", url: "/" },
@@ -45,3 +45,19 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const histories = [
+  {
+    title: "Global Code",
+    date: "Jan 2019 - Feb 2020",
+    icons: "image",
+    iconBg: "#383E56",
+    story: "A short story about Global Code"
+  }, {
+    title: "Turntabl",
+    date: "Jan 2019 - Feb 2020",
+    icons: "image",
+    iconBg: "#383E56",
+    story: "A short story about Turntabl"
+  }
+]
