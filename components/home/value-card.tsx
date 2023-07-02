@@ -13,7 +13,9 @@ export default function ValueCard(value: InputProps) {
         </p>
       </div>
       <h5 className="my-3">{value.title}</h5>
-      <p className="w-[303px] my-3">{value.description}</p>
+      <p className="w-[303px] max-[1137px]:w-[250px] my-3">
+        {value.description}
+      </p>
     </div>
   );
 }

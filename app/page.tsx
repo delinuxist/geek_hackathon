@@ -8,10 +8,10 @@ export default function Home() {
     <>
       <HomeHero></HomeHero>
       <section className="home-welcome bg-pixel-black">
-        <div className="container mx-auto padding-x py-20 flex-center flex-col md:flex-row">
-          <div className="home-welcome-text text-white flex-1 self-start">
-            <div className="w-[410px] mx-auto">
-              <h1 className="text-[96px] font-neuebit leading-9">
+        <div className="container mx-auto padding-x py-20 flex-center max-[1016px]:flex-col flex-row gap-x-5">
+          <div className="home-welcome-text text-white flex-1 self-start max-[1016px]:self-center max-[1016px]:mb-12">
+            <div className="w-[410px] max-[600px]:w-[350px] mx-auto">
+              <h1 className="text-[96px] max-[1023px]:text-[75px] max-[456px]:text-[60px] max-[280px]:text-[45px] font-neuebit leading-9">
                 We&apos;re <span className="text-disruption">turntabl</span>
               </h1>
               <p className="my-5 mt-12">
@@ -26,8 +26,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="home-welcome-values flex-1 text-white">
-            <div className="grid grid-cols-2 grid-rows-2 w-[657px] gap-y-5">
+          <div className="home-welcome-values md:flex-1 flex-none text-white max-[1016px]:self-center">
+            <div className="grid max-[600px]:grid-cols-1 grid-cols-[auto_auto] grid-rows-2 w-[657px] max-[1137px]:w-[550px] max-[600px]:w-[300px] gap-5">
               {values.map((value) => ValueCard(value))}
             </div>
           </div>
