@@ -15,8 +15,10 @@ const SoftwareConsultancy = () => {
                 Turntabl&apos;s expertise and industry knowledge empower businesses to achieve their goals, enhance
                 customer experiences, and gain a competitive edge.
                 <br/><br/>
-                <strong><em>Contact Turntabl today to transform your organization and unlock its full potential in the complex
-                    software landscape.</em></strong>
+                <strong><em>
+                    Contact Turntabl today to transform your organization and unlock its full potential in the complex
+                    software landscape.
+                </em></strong>
             </p>
         </div>
     );

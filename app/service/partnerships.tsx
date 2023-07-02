@@ -20,7 +20,9 @@ const Partnership = () => {
                 Through collaboration, innovation, and value, Turntabl empowers clients to achieve their objectives and
                 unlock their full potential.
                 <br/><br/>
-                <strong><em>Experience the transformative power of Partnership as a Service with Turntabl.</em></strong>
+                <strong><em>
+                    Experience the transformative power of Partnership as a Service with Turntabl.
+                </em></strong>
             </p>
         </div>
     );

@@ -12,14 +12,16 @@ const ProjectManagement = () => {
                 planning, resource allocation, risk management, and stakeholder communication.
                 <br/>
                 We utilize industry-leading tools and methodologies to ensure efficient project execution, timely
-                delivery, and high-quality outcomes. Our services are scalable and adaptable, accommodating changing project requirements.
+                delivery, and high-quality outcomes. Our services are scalable and adaptable, accommodating changing
+                project requirements.
                 <br/><br/>
                 As a trusted provider, Turntabl is dedicated to empowering organizations, driving efficiency, and
                 achieving project success.
                 <br/><br/>
-                <strong><em>Experience streamlined success with Turntabl&apos;s Project Management Service and unlock
-                    the full
-                    potential of your projects.</em></strong>
+                <strong><em>
+                    Experience streamlined success with Turntabl&apos;s Project Management Service and unlock the full
+                    potential of your projects.
+                </em></strong>
             </p>
         </div>
     );

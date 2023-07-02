@@ -8,7 +8,8 @@ const Development = () => {
             <p>
                 <br/>
                 Our services are tailored to provide a perfect fit for each organization, whether it&apos;s web
-                applications, mobile apps, enterprise software, or system integration. We embrace Agile development methodology,
+                applications, mobile apps, enterprise software, or system integration. We embrace Agile development
+                methodology,
                 ensuring adaptability, transparency, and high-quality software within shorter cycles. Collaboration with
                 our clients at every stage fosters effective communication and seamless cooperation.
                 <br/><br/>
@@ -19,8 +20,9 @@ const Development = () => {
                 Continuous support and maintenance services are provided to keep software optimized and secure,
                 accommodating evolving business needs.
                 <br/><br/>
-                <strong><em>Experience tailored software solutions to unlock your organization&apos;s full
-                    potential.</em></strong>
+                <strong><em>
+                    Experience tailored software solutions to unlock your organization&apos;s full potential.
+                </em></strong>
 
             </p>
         </div>
