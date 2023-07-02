@@ -45,3 +45,30 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const values = [
+  {
+    number: "01",
+    title: "Innovative",
+    description:
+      "Turntabl is changing the way the world thinks about software development.",
+  },
+  {
+    number: "02",
+    title: "Experts",
+    description:
+      "Turntabl has considerable experience in delivering successful projects.",
+  },
+  {
+    number: "03",
+    title: "Development",
+    description:
+      "Turntabl is built on the ideal of contributing towards creating a better future for everyone they come across.",
+  },
+  {
+    number: "04",
+    title: "Unique",
+    description:
+      "Turntabl offers world-leading training to their associates before engaging in client projects.",
+  },
+];

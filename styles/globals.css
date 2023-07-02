@@ -13,6 +13,9 @@
   h1 {
     @apply text-[60px] font-bold font-mondwest;
   }
+  h5 {
+    @apply text-[32px] font-medium;
+  }
   body {
     @apply relative;
   }

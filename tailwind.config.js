@@ -18,6 +18,9 @@ module.exports = {
         mondwest: ["var(--font-mondwest)"],
         // sans: ["var(--font-worksans"],
       },
+      backgroundImage: {
+        "home-hero-number": "url('/assets/img/hero-number-bg.svg')" 
+      },
       colors: {
         "pixel-black": "#000000",
         "software-grey": "#efefef",
