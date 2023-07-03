@@ -37,10 +37,11 @@ export default function Service() {
             <div className="p-12 text-4xl font-bold bg-cover bg-black text-center">
                 <div className="py-5 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div>
-                        <h2 className="font-neuebit px-5 text-7xl font-bold text-start text-white">
+                        <h2 className="font-neuebit px-5 text-7xl font-bold text-start text-white" style={{ lineHeight: "0.7" }}>
                             All the Services <br/> you need
                         </h2>
                         <p className="text-start text-sm font-light text-white px-5">
+                            <br/>
                             From strategic consulting to cutting-edge technology solutions, we have you covered. Whether
                             you need assistance with software development, IT infrastructure, project management,
                             digital marketing, or any other aspect of your business, we have the capabilities to provide
@@ -48,7 +49,7 @@ export default function Service() {
                             destination for all your business requirements.
                         </p>
 
-                    {/*    Button Over Here    */}
+                        {/*    Button Over Here    */}
                     </div>
                     <div className="p-2">
                         <Image src="/assets/img/img.png" width={500} height={500} alt="Your Image"/>
