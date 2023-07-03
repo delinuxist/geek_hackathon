@@ -1,10 +1,13 @@
 import React from 'react'
-import { AboutPage } from '../../components/pages'
+import { Hero, History, Mission, Founders } from '../../components/pages/about'
 
 export default function About() {
   return (
-    <main className='relative'>
-      <AboutPage />
+    <main className='relative w-full bg-software-grey'>
+      <Hero />
+      <Mission />
+      <History />
+      <Founders />
     </main>
   )
 }
