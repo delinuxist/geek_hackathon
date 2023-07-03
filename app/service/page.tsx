@@ -34,13 +34,13 @@ export default function Service() {
 
     return (
         <section className="bg-white h-full">
-            <div className="p-12 text-4xl font-bold bg-cover bg-inspiration bg-opacity-50 text-center">
+            <div className="p-12 text-4xl font-bold bg-cover bg-black text-center">
                 <div className="py-5 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div>
-                        <h2 className="font-neuebit px-5 text-7xl font-bold text-start">
+                        <h2 className="font-neuebit px-5 text-7xl font-bold text-start text-white">
                             All the Services <br/> you need
                         </h2>
-                        <p className="text-start text-sm font-light px-5">
+                        <p className="text-start text-sm font-light text-white px-5">
                             From strategic consulting to cutting-edge technology solutions, we have you covered. Whether
                             you need assistance with software development, IT infrastructure, project management,
                             digital marketing, or any other aspect of your business, we have the capabilities to provide
