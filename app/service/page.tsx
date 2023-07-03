@@ -38,7 +38,7 @@ export default function Service() {
                 <div className="py-5 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div>
                         <h2 className="font-neuebit px-5 text-7xl font-bold text-start text-white" style={{ lineHeight: "0.7" }}>
-                            All the Services <br/> you need
+                            All the <span className='text-disruption'>Services</span> <br/> you need
                         </h2>
                         <p className="text-start text-sm font-light text-white px-5">
                             <br/>
@@ -87,7 +87,7 @@ export default function Service() {
                             </p>
                             <br/>
                             <Link href="">
-                                <p className="learn-more-link text-xl font-bold font-mondwest text-inspiration"
+                                <p className="learn-more-link text-xl paragraph-outline font-extrabold font-mondwest p-2 text-pixel-black"
                                    onClick={() => openModal("partnership")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
@@ -118,7 +118,7 @@ export default function Service() {
                             </p>
                             <br/>
                             <Link href="">
-                                <p className="learn-more-link text-xl font-bold font-mondwest text-inspiration"
+                                <p className="learn-more-link text-xl paragraph-outline font-extrabold font-mondwest text-pixel-black"
                                    onClick={() => openModal("projectManagement")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
@@ -158,7 +158,7 @@ export default function Service() {
                             </p>
                             <br/>
                             <Link href="">
-                                <p className="learn-more-link text-xl font-bold font-mondwest text-inspiration"
+                                <p className="learn-more-link text-xl paragraph-outline font-extrabold font-mondwest text-pixel-black"
                                    onClick={() => openModal("development")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
@@ -185,7 +185,7 @@ export default function Service() {
                             </p>
                             <br/>
                             <Link href="">
-                                <p className="learn-more-link text-xl font-bold font-mondwest text-inspiration"
+                                <p className="learn-more-link text-xl font-extrabold paragraph-outline font-mondwest text-pixel-black"
                                    onClick={() => openModal("softwareConsultancy")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
