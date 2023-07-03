@@ -1,5 +1,5 @@
-import { StaticImageData } from 'next/image';
-import { MouseEventHandler } from 'react';
+import { StaticImageData } from "next/image";
+import { MouseEventHandler } from "react";
 
 export interface CustomButtonProps {
   title: string;
@@ -9,4 +9,12 @@ export interface CustomButtonProps {
   textStyles?: string;
   rightIcon?: StaticImageData;
   isDisabled?: boolean;
+}
+
+export interface HistoryCardProps {
+  title: string;
+  icon: string;
+  date: string;
+  iconBg: string;
+  story: string;
 }
