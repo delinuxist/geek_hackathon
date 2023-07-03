@@ -1,3 +1,4 @@
-import HistoryCard from './HistoryCard';
+import HistoryCard from "./HistoryCard";
+import FoundersCard from "./FoundersCard";
 
-export {HistoryCard}
+export { HistoryCard, FoundersCard };
