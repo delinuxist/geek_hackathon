@@ -66,6 +66,26 @@ export const fadeIn = (
   };
 };
 
+export const bounceIn = (delay: number, duration: number) => {
+  return {
+    hidden: {
+      y: -100,
+      scale: 0.5,
+    },
+    show: {
+      y: 0,
+      scale: 1,
+      transition: {
+        delay: delay,
+        duration: duration,
+        type: "spring",
+        stiffness: 300,
+        damping: 10,
+      },
+    },
+  };
+};
+
 export const staggerContainer = (
   staggerChildren?: any,
   delayChildren?: any,

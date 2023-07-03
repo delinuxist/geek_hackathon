@@ -26,7 +26,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className='w-[100%] flex flex-col gap-3 relative'>
+      <div className='w-[100%] flex flex-col gap-3 relative mt-10'>
         <div className='w-[100%] z-10 inset-0'>
           <h1 className={``}>
             We Are Turntabl,
