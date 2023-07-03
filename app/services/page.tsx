@@ -1,15 +1,15 @@
 'use client'
-import React, {ReactNode, useEffect, useState} from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import Image from 'next/image';
-import {motion} from 'framer-motion';
-import {bounceIn} from '@/core/utils/motion';
+import { motion } from 'framer-motion';
+import { bounceIn } from '@/core/utils/motion';
 import Link from "next/link";
 import Modal from '../../components/layout/Modal'
-import Partnership from "@/app/service/partnerships";
-import ProjectManagement from "@/app/service/project-management";
-import Development from "@/app/service/development";
-import SoftwareConsultancy from "@/app/service/software-consultancy";
-import Lottie from 'lottie-web';
+import Partnership from "@/app/services/partnerships";
+import ProjectManagement from "@/app/services/project-management";
+import Development from "@/app/services/development";
+import SoftwareConsultancy from "@/app/services/software-consultancy";
+import Lottie from "lottie-react";
 import animationData from './serv.json';
 
 export default function Service() {
@@ -18,13 +18,13 @@ export default function Service() {
 
     const openModal = (content: string) => {
         if (content === "partnership") {
-            setModalContent(() => <Partnership/>);
+            setModalContent(() => <Partnership />);
         } else if (content === "projectManagement") {
-            setModalContent(() => <ProjectManagement/>);
+            setModalContent(() => <ProjectManagement />);
         } else if (content === "development") {
-            setModalContent(() => <Development/>);
+            setModalContent(() => <Development />);
         } else if (content === "softwareConsultancy") {
-            setModalContent(() => <SoftwareConsultancy/>);
+            setModalContent(() => <SoftwareConsultancy />);
         }
         setShowModal(true);
     };
@@ -34,29 +34,29 @@ export default function Service() {
         setModalContent(null);
     };
 
-    useEffect(() => {
-        const animationContainer = document.getElementById('animation-container');
-        if (animationContainer) {
-            Lottie.loadAnimation({
-                container: animationContainer,
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-                animationData: animationData
-            });
-        }
-    }, []);
+    // useEffect(() => {
+    //     const animationContainer = document.getElementById('animation-container');
+    //     if (animationContainer) {
+    //         Lottie.loadAnimation({
+    //             container: animationContainer,
+    //             renderer: 'svg',
+    //             loop: true,
+    //             autoplay: true,
+    //             animationData: animationData
+    //         });
+    //     }
+    // }, []);
 
     return (
-        <section className="bg-white h-full">
-            <div className="p-12 text-4xl font-bold bg-cover bg-black text-center">
-                <div className="py-5 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+        <section className="h-full bg-white">
+            <div className="p-12 text-4xl font-bold text-center bg-black bg-cover">
+                <div className="grid items-center grid-cols-1 gap-4 py-5 md:grid-cols-2">
                     <div>
-                        <h2 className="font-neuebit px-5 text-7xl font-bold text-start text-white" style={{ lineHeight: "0.7" }}>
-                            All the <span className='text-disruption'>Services</span> <br/> you need
+                        <h2 className="px-5 font-bold text-white font-neuebit text-7xl text-start" style={{ lineHeight: "0.7" }}>
+                            All the <span className='text-disruption'>Services</span> <br /> you need
                         </h2>
-                        <p className="xl:text-2xl text-start text-sm font-light text-white px-5">
-                            <br/>
+                        <p className="px-5 text-sm font-light text-white xl:text-2xl text-start">
+                            <br />
                             From strategic consulting to cutting-edge technology solutions, we have you covered. Whether
                             you need assistance with software development, IT infrastructure, project management,
                             digital marketing, or any other aspect of your business, we have the capabilities to provide
@@ -68,36 +68,37 @@ export default function Service() {
                     </div>
                     <div className="p-2">
                         <div id="animation-container">
-                        {/*    <Image src='/assets/img/img.png'*/}
-                        {/*           width={1000}*/}
-                        {/*           height={1000}*/}
-                        {/*           alt='your image'/>*/}
+                            {/*    <Image src='/assets/img/img.png'*/}
+                            {/*           width={1000}*/}
+                            {/*           height={1000}*/}
+                            {/*           alt='your image'/>*/}
+                            <Lottie animationData={animationData} />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <section className="container mx-auto py-8">
+            <section className="container py-8 mx-auto">
                 <div className="mb-4 text-center">
-                    <h1 className='font-neuebit text-shadow text-pixel-black font-bold text-5xl'>OUR SERVICES</h1>
+                    <h1 className='text-5xl font-bold font-neuebit text-shadow text-pixel-black'>OUR SERVICES</h1>
                 </div>
 
-                <div className="p-6 serv-sec mb-2 bg-transparent">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <div className="p-6 mb-2 bg-transparent serv-sec">
+                    <div className="grid items-center grid-cols-1 gap-4 md:grid-cols-2">
                         <div>
                             <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
-                                <Image src="/assets/img/service-header.jpg" width={500} height={500} alt="Your Image"/>
+                                <Image src="/assets/img/service-header.jpg" width={500} height={500} alt="Your Image" />
                             </motion.div>
                         </div>
                         <div>
-                            <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Partnerships</h3>
-                            <br/>
+                            <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Partnerships</h3>
+                            <br />
                             <p className="text-pixel-black">
                                 In today&apos;s fast-paced and interconnected business landscape, successful companies
                                 understand the power of collaboration and strategic partnerships. At Turntabl, we have
                                 reimagined the concept of partnership and developed a unique approach known as
                                 <strong> &ldquo;Partnership as a Service.&rdquo;</strong>
-                                <br/>
+                                <br />
                                 Our Partnership as a Service offering goes beyond the
                                 traditional vendor-client relationship, aiming to foster mutually beneficial and
                                 long-lasting collaborations that drive innovation, growth, and shared success.
@@ -105,29 +106,29 @@ export default function Service() {
                                 Partner with Turntabl today and design low-cost, high-quality technology ethically and
                                 sustainably.
                             </p>
-                            <br/>
+                            <br />
                             <Link href="">
-                                <p className="learn-more-link text-xl font-extrabold font-mondwest p-2 text-pixel-black"
-                                   onClick={() => openModal("partnership")}>
+                                <p className="p-2 text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
+                                    onClick={() => openModal("partnership")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
                             </Link>
                         </div>
                     </div>
                 </div>
-                <hr className="border-gray-300 my-4 w-full"/>
+                <hr className="w-full my-4 border-gray-300" />
 
-                <div className="p-6 serv-sec mb-2 bg-transparent">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <div className="p-6 mb-2 bg-transparent serv-sec">
+                    <div className="grid items-center grid-cols-1 gap-4 md:grid-cols-2">
                         <div>
-                            <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Project Management</h3>
-                            <br/>
+                            <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Project Management</h3>
+                            <br />
                             <p className="text-pixel-black">
                                 In today&apos;s dynamic business environment, effective project management plays a
                                 pivotal
                                 role in driving organizational success. At Turntabl, we understand the
                                 complexities and challenges associated with managing projects.
-                                <br/>
+                                <br />
                                 We cooperate with you throughout the project life-cycle in small, committed teams. From
                                 inception and definition to delivery, production and maintenance - our style is clean
                                 lines, efficient code, empowered users.
@@ -136,92 +137,92 @@ export default function Service() {
                                 stakeholders&apos;
                                 expectations.
                             </p>
-                            <br/>
+                            <br />
                             <Link href="">
-                                <p className="learn-more-link text-xl font-extrabold font-mondwest text-pixel-black"
-                                   onClick={() => openModal("projectManagement")}>
+                                <p className="text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
+                                    onClick={() => openModal("projectManagement")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
                             </Link>
                         </div>
                         <div>
                             <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
-                                <Image src="/assets/img/header-approach.jpg" width={500} height={500} alt="Your Image"/>
+                                <Image src="/assets/img/header-approach.jpg" width={500} height={500} alt="Your Image" />
                             </motion.div>
                         </div>
                     </div>
                 </div>
-                <hr className="border-gray-300 my-4 w-full"/>
+                <hr className="w-full my-4 border-gray-300" />
 
-                <div className="p-6 serv-sec mb-2 bg-transparent">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <div className="p-6 mb-2 bg-transparent serv-sec">
+                    <div className="grid items-center grid-cols-1 gap-4 md:grid-cols-2">
                         <div>
                             <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
                                 <Image src="/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg"
-                                       width={500} height={500} alt="Your Image"/>
+                                    width={500} height={500} alt="Your Image" />
                             </motion.div>
                         </div>
                         <div>
-                            <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Development</h3>
-                            <br/>
+                            <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Development</h3>
+                            <br />
                             <p className="text-pixel-black">
                                 At Turntabl, we specialize in delivering cutting-edge software solutions
                                 tailored to meet the unique needs and challenges of modern businesses. With our deep
                                 expertise, agile methodologies, and customer-centric approach, we empower organizations
                                 to harness the power of technology and drive innovation through our comprehensive
-                                Software Development services.<br/>
+                                Software Development services.<br />
                                 We understand that every business has distinct requirements and goals. That&apos;s why
                                 our Software Development services are highly customizable to ensure a perfect fit for
                                 your organization.
                                 Our personnel are adaptable and resourceful. We chew through JIRAs just as easily as we
                                 develop your UX or next generation micro-service layer.
                             </p>
-                            <br/>
+                            <br />
                             <Link href="">
-                                <p className="learn-more-link text-xl font-extrabold font-mondwest text-pixel-black"
-                                   onClick={() => openModal("development")}>
+                                <p className="text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
+                                    onClick={() => openModal("development")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
                             </Link>
                         </div>
                     </div>
                 </div>
-                <hr className="border-gray-300 my-4 w-full"/>
+                <hr className="w-full my-4 border-gray-300" />
 
-                <div className="p-5 serv-sec mb-2 bg-transparent">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <div className="p-5 mb-2 bg-transparent serv-sec">
+                    <div className="grid items-center grid-cols-1 gap-4 md:grid-cols-2">
                         <div>
-                            <h3 className="font-neuebit text-pixel-black text-5xl font-bold">Software Consultancy</h3>
-                            <br/>
+                            <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Software Consultancy</h3>
+                            <br />
                             <p className="text-pixel-black">
                                 At Turntabl, we understand that businesses face unique challenges and require
                                 tailored solutions to thrive in today&apos;s dynamic digital landscape. That&apos;s why
                                 we offer comprehensive Software Consultancy services designed to empower organizations
                                 and drive their success.
-                                <br/>
+                                <br />
                                 We take a client-centric approach, carefully listening to your needs, challenges, and
                                 goals. By gaining a thorough understanding of your business, we can provide strategic
                                 guidance and industry-leading customized solutions that align with your objectives.
                             </p>
-                            <br/>
+                            <br />
                             <Link href="">
-                                <p className="learn-more-link text-xl font-extrabold font-mondwest text-pixel-black"
-                                   onClick={() => openModal("softwareConsultancy")}>
+                                <p className="text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
+                                    onClick={() => openModal("softwareConsultancy")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
                             </Link>
                         </div>
                         <div>
                             <motion.div initial="hidden" whileInView="show" variants={bounceIn(0, 1.2)}>
-                                <Image src="/assets/img/IMG_9005.jpg" width={500} height={500} alt="Your Image"/>
+                                <Image src="/assets/img/IMG_9005.jpg" width={500} height={500} alt="Your Image" />
                             </motion.div>
                         </div>
                     </div>
                 </div>
             </section>
             <Modal isVisible={showModal}
-                   onClose={closeModal}
-                   content={modalContent}/>
+                onClose={closeModal}
+                content={modalContent} />
         </section>
     );
 }

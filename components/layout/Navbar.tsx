@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 bg-software-grey h-14 flex-center">
+      <nav className="sticky top-0 z-50 bg-software-grey h-14 flex-center">
         <div className="container mx-auto padding-x flex-between">
           {/* Logo */}
           <div>
@@ -43,12 +43,11 @@ const Navbar = () => {
               return (
                 <li
                   key={link.title}
-                  className={`mr-4 last:mr-0 nav-link relative ${
-                    link.url === pathName ? "nav-link-selected" : ""
-                  }`}
+                  className={`mr-4 last:mr-0 nav-link relative ${link.url === pathName ? "nav-link-selected" : ""
+                    }`}
                 >
                   <Link href={link.url}>{link.title}</Link>
-                  <div className="nav-link-indicator absolute"></div>
+                  <div className="absolute nav-link-indicator"></div>
                 </li>
               );
             })}
@@ -62,35 +61,34 @@ const Navbar = () => {
             id="menu"
             className="nav-mobile-menu"
           />
-          <label htmlFor="menu" className="md:hidden cursor-pointer">
+          <label htmlFor="menu" className="cursor-pointer md:hidden">
             <FontAwesomeIcon icon={faBars} />
           </label>
         </div>
       </nav>
       {/* mobile nav items */}
       <nav
-        className={`nav-mobile md:hidden absolute h-full w-full top-0 left-0 z-10 bg-disruption -translate-x-full transition-all duration-700 ${
-          menuOpen ? "translate-x-0" : ""
-        }`}
+        className={`nav-mobile md:hidden absolute h-full w-full top-0 left-0 z-10 bg-disruption -translate-x-full transition-all duration-700 ${menuOpen ? "translate-x-0" : ""
+          }`}
       >
-        <div className="nav-mobile-close flex justify-end p-5">
+        <div className="flex justify-end p-5 nav-mobile-close">
           <div
             onClick={handleCloseMenu}
-            className="button-bg bg-white rounded-full flex justify-center cursor-pointer items-center w-14 h-14"
+            className="flex items-center justify-center bg-white rounded-full cursor-pointer button-bg w-14 h-14"
           >
             <FontAwesomeIcon size="xl" icon={faXmark} />
           </div>
         </div>
-        <ul className="mt-28 flex-center flex-col">
+        <ul className="flex-col mt-28 flex-center">
           {navLinks.map((link, index) => {
             return (
               <li
                 key={link.title}
                 onClick={handleCloseMenu}
-                className="mr-4 mb-10 last:mr-0 nav-link relative"
+                className="relative mb-10 mr-4 last:mr-0 nav-link"
               >
                 <Link
-                  className="text-3xl py-3 px-4 uppercase transition-all duration-500 nav-mobile-link"
+                  className="px-4 py-3 text-3xl uppercase transition-all duration-500 nav-mobile-link"
                   href={link.url}
                 >
                   0{index + 1} {link.title}
