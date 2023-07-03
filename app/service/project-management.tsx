@@ -3,7 +3,7 @@ import React from "react";
 
 const ProjectManagement = () => {
     return (
-        <div className='rounded-2xl bg-insightful p-5'>
+        <div className='rounded-2xl bg-white p-8'>
             <h2 className='text-4xl font-bold font-mondwest'>Project Management</h2>
             <p>
                 <br/>

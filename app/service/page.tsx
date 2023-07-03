@@ -87,7 +87,7 @@ export default function Service() {
                             </p>
                             <br/>
                             <Link href="">
-                                <p className="learn-more-link text-xl paragraph-outline font-extrabold font-mondwest p-2 text-pixel-black"
+                                <p className="learn-more-link text-xl font-extrabold font-mondwest p-2 text-pixel-black"
                                    onClick={() => openModal("partnership")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
@@ -118,7 +118,7 @@ export default function Service() {
                             </p>
                             <br/>
                             <Link href="">
-                                <p className="learn-more-link text-xl paragraph-outline font-extrabold font-mondwest text-pixel-black"
+                                <p className="learn-more-link text-xl font-extrabold font-mondwest text-pixel-black"
                                    onClick={() => openModal("projectManagement")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
@@ -158,7 +158,7 @@ export default function Service() {
                             </p>
                             <br/>
                             <Link href="">
-                                <p className="learn-more-link text-xl paragraph-outline font-extrabold font-mondwest text-pixel-black"
+                                <p className="learn-more-link text-xl font-extrabold font-mondwest text-pixel-black"
                                    onClick={() => openModal("development")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
@@ -185,7 +185,7 @@ export default function Service() {
                             </p>
                             <br/>
                             <Link href="">
-                                <p className="learn-more-link text-xl font-extrabold paragraph-outline font-mondwest text-pixel-black"
+                                <p className="learn-more-link text-xl font-extrabold font-mondwest text-pixel-black"
                                    onClick={() => openModal("softwareConsultancy")}>
                                     Learn More <span className="arrow">&#8594;</span>
                                 </p>
