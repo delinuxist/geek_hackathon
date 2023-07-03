@@ -18,3 +18,14 @@ export interface HistoryCardProps {
   iconBg: string;
   story: string;
 }
+
+export interface FoundersCardProps {
+  name: string;
+  position: string;
+  image: string;
+  index: number;
+  links: {
+    title: string;
+    url: string;
+  }[];
+}

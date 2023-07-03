@@ -50,14 +50,39 @@ export const histories = [
   {
     title: "Global Code",
     date: "Jan 2019 - Feb 2020",
-    icons: "image",
+    icon: "image",
     iconBg: "#383E56",
     story: "A short story about Global Code"
   }, {
     title: "Turntabl",
     date: "Jan 2019 - Feb 2020",
-    icons: "image",
+    icon: "image",
     iconBg: "#383E56",
     story: "A short story about Turntabl"
+  }
+]
+
+export const founders = [
+  {
+    name: "Sam",
+    position: "CEO",
+    image: "/assets/img/20230317_113148 (1).jpg",
+    links: [
+      {
+        title: "twitter",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "Obeng",
+    position: "CTO",
+    image: "/assets/img/20230317_113148 (1).jpg",
+    links: [
+      {
+        title: "twitter",
+        url: ""
+      }
+    ]
   }
 ]
