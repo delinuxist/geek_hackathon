@@ -73,4 +73,9 @@
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+
+  .paragraph-outline {
+    color: white; /* Set the text color to white */
+    text-shadow: 1px 1px 0 #b0b0ff, -1px -1px 0 #b0b0ff, 1px -1px 0 #b0b0ff, -1px 1px 0 #b0b0ff; /* Apply shadows to create an outline effect */
+  }
 }
