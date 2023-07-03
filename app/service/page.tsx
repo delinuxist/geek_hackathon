@@ -1,5 +1,5 @@
 'use client'
-import React, {ReactNode, useState} from 'react';
+import React, {ReactNode, useEffect, useState} from 'react';
 import Image from 'next/image';
 import {motion} from 'framer-motion';
 import {bounceIn} from '@/core/utils/motion';
@@ -9,6 +9,8 @@ import Partnership from "@/app/service/partnerships";
 import ProjectManagement from "@/app/service/project-management";
 import Development from "@/app/service/development";
 import SoftwareConsultancy from "@/app/service/software-consultancy";
+import Lottie from 'lottie-web';
+import animationData from './serv.json';
 
 export default function Service() {
     const [showModal, setShowModal] = useState(false)
@@ -32,6 +34,19 @@ export default function Service() {
         setModalContent(null);
     };
 
+    useEffect(() => {
+        const animationContainer = document.getElementById('animation-container');
+        if (animationContainer) {
+            Lottie.loadAnimation({
+                container: animationContainer,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                animationData: animationData
+            });
+        }
+    }, []);
+
     return (
         <section className="bg-white h-full">
             <div className="p-12 text-4xl font-bold bg-cover bg-black text-center">
@@ -40,7 +55,7 @@ export default function Service() {
                         <h2 className="font-neuebit px-5 text-7xl font-bold text-start text-white" style={{ lineHeight: "0.7" }}>
                             All the <span className='text-disruption'>Services</span> <br/> you need
                         </h2>
-                        <p className="text-start text-sm font-light text-white px-5">
+                        <p className="xl:text-2xl text-start text-sm font-light text-white px-5">
                             <br/>
                             From strategic consulting to cutting-edge technology solutions, we have you covered. Whether
                             you need assistance with software development, IT infrastructure, project management,
@@ -52,7 +67,12 @@ export default function Service() {
                         {/*    Button Over Here    */}
                     </div>
                     <div className="p-2">
-                        <Image src="/assets/img/img.png" width={500} height={500} alt="Your Image"/>
+                        <div id="animation-container">
+                        {/*    <Image src='/assets/img/img.png'*/}
+                        {/*           width={1000}*/}
+                        {/*           height={1000}*/}
+                        {/*           alt='your image'/>*/}
+                        </div>
                     </div>
                 </div>
             </div>
