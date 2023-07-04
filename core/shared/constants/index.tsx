@@ -23,7 +23,7 @@ export const footerLinks = [
   {
     title: "About",
     links: [
-      { title: "About Us", url: "/", icon: "" },
+      { title: "About Us", url: "/about", icon: "" },
       { title: "Why Ghana?", url: "/", icon: "" },
       { title: "Our People", url: "/", icon: "" },
       { title: "Featured Content", url: "/", icon: "" },
@@ -43,7 +43,7 @@ export const footerLinks = [
       { title: "Twitter", url: "https://twitter.com/turntablio", icon: <FaTwitter /> },
       { title: "Youtube", url: "https://youtube.com/@turntablgh", icon: <FaYoutube /> },
       { title: "Github", url: "/", icon: <FaGithub /> },
-      { title: "Medium", url: "/", icon: <FaMedium /> },
+      { title: "Medium", url: "https://medium.com/@turntabl.io", icon: <FaMedium /> },
     ],
   },
 ];
