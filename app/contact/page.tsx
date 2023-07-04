@@ -1,7 +1,9 @@
-import React from 'react'
+import FormSection from './form-section'
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <>
+    <FormSection />
+    </>
   )
 }

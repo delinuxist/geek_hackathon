@@ -10,6 +10,12 @@
 
 @layer base {
   /* modify a base style e.g [h1,p,label] */
+  h1 {
+    @apply text-[45px] font-semibold  font-mondwest;
+  }
+  body {
+    @apply relative;
+  }
 }
 
 @layer utilities {
@@ -23,7 +29,7 @@
   }
 
   .padding-y {
-    @apply py-4;
+    @apply py-8;
   }
 
   .flex-center {
@@ -36,5 +42,40 @@
 
   .custom-btn {
     @apply relative flex flex-row items-center justify-center px-6 py-3 outline-none;
+  }
+
+
+  .nav-link-indicator {
+    @apply h-1.5 w-1.5 bg-inspiration rounded-full -bottom-2 left-1/2 -translate-x-1/2 invisible opacity-0 transition-all;
+    @apply duration-300;
+  }
+  .nav-link:hover .nav-link-indicator, .nav-link-selected .nav-link-indicator {
+    @apply visible opacity-100;
+  }
+  .nav-link:hover .nav-link-indicator::before, .nav-link-selected .nav-link-indicator::before {
+    @apply -translate-x-3 opacity-100;
+  }
+  .nav-link:hover .nav-link-indicator::after, .nav-link-selected .nav-link-indicator::after {
+    @apply translate-x-3 opacity-100;
+  }
+  .nav-link-indicator::before, .nav-link-indicator::after {
+    content: '';
+    @apply h-full w-full absolute rounded-full bg-inspiration opacity-0 transition-all duration-300;
+  }
+  .nav-mobile-link {
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #000 50%);
+    background-size: 230%;
+  }
+  .nav-mobile-link:hover {
+    background-position: 100%;
+    @apply -translate-x-1 text-disruption;
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .paragraph-outline {
+    color: white; /* Set the text color to white */
+    text-shadow: 1px 1px 0 #b0b0ff, -1px -1px 0 #b0b0ff, 1px -1px 0 #b0b0ff, -1px 1px 0 #b0b0ff; /* Apply shadows to create an outline effect */
   }
 }

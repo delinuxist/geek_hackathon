@@ -3,21 +3,21 @@ import { FaLinkedin, FaTwitter, FaYoutube, FaGithub, FaMedium } from 'react-icon
 export const navLinks = [
   {
     title: "About Us",
-    url: "/about"
+    url: "/about",
   },
   {
-    title: "Service",
-    url: "/services"
+    title: "Services",
+    url: "/services",
   },
   {
     title: "Clients",
-    url: "/clients"
+    url: "/clients",
   },
   {
     title: "Contact Us",
-    url: "/contact"
-  }
-]
+    url: "/contact",
+  },
+];
 
 export const footerLinks = [
   {
@@ -43,7 +43,48 @@ export const footerLinks = [
       { title: "Twitter", url: "https://twitter.com/turntablio", icon: <FaTwitter /> },
       { title: "Youtube", url: "https://youtube.com/@turntablgh", icon: <FaYoutube /> },
       { title: "Github", url: "/", icon: <FaGithub /> },
-      { title: "Medium", url: "/", icon: <FaMedium /> },
+      { title: "Medium", url: "/", icon: <FaMedium /> }
     ],
   },
 ];
+
+export const histories = [
+  {
+    title: "Global Code",
+    date: "Jan 2019 - Feb 2020",
+    icon: "image",
+    iconBg: "#383E56",
+    story: "A short story about Global Code"
+  }, {
+    title: "Turntabl",
+    date: "Jan 2019 - Feb 2020",
+    icon: "image",
+    iconBg: "#383E56",
+    story: "A short story about Turntabl"
+  }
+]
+
+export const founders = [
+  {
+    name: "Sam",
+    position: "CEO",
+    image: "/assets/img/20230317_113148 (1).jpg",
+    links: [
+      {
+        title: "twitter",
+        url: ""
+      }
+    ]
+  },
+  {
+    name: "Obeng",
+    position: "CTO",
+    image: "/assets/img/20230317_113148 (1).jpg",
+    links: [
+      {
+        title: "twitter",
+        url: ""
+      }
+    ]
+  }
+]
