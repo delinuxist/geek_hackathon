@@ -1,9 +1,10 @@
-import FormSection from './form-section'
+"use client";
+import AnimatedContactFormSection from "@/components/pages/contact/animated-contact-form";
 
 export default function Contact() {
   return (
     <>
-    <FormSection />
+      <AnimatedContactFormSection />
     </>
-  )
+  );
 }

@@ -1,24 +1,21 @@
+"use client";
 import InputField from "@/components/forms/input-field";
 import InputLabel from "@/components/forms/input-label";
 import TextArea from "@/components/forms/text-area";
 import CustomButton from "@/components/utils/CustomButton";
+import { motion } from "framer-motion";
 
 export default function FormSection() {
   const styles = {
     ttContactFormRowItem:
-      "flex flex-col flex-grow flex-shrink basis-[500px] self-stretch m-3 p-2",
+      "flex flex-col flex-grow flex-shrink basis-[350px] self-stretch m-3 p-1",
+    ttContactPageRowItem:
+      "flex flex-col flex-grow flex-shrink self-stretch m-3 p-1",
   };
 
   return (
-    <div className="padding-x">
-      <div className="content-center justify-center py-10">
-        <h1 className="text-center">Contact Us</h1>
-        <p className="text-center">
-          Talking is free, and who knows what we might achieve together. <br />{" "}
-          Contact us now for an obligation free chat!
-        </p>
-      </div>
-      <div className="justify-between items-center flex flex-col">
+    <div className={`rounded-3xl`}>
+      <div className="justify-between items-center flex flex-col p-3">
         <div className="flex flex-row justify-center items-center flex-wrap">
           <div className={styles.ttContactFormRowItem}>
             <InputLabel label="Name: " />
