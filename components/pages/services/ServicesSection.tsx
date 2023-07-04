@@ -45,7 +45,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                         </p>
                         <br/>
                         <Link href="">
-                            <p className="p-2 text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
+                            <p className="py-2 text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
                                onClick={() => openModal("partnership")}>
                                 Learn More <span className="arrow">&#8594;</span>
                             </p>
@@ -76,7 +76,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                         </p>
                         <br/>
                         <Link href="">
-                            <p className="text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
+                            <p className="py-2 text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
                                onClick={() => openModal("projectManagement")}>
                                 Learn More <span className="arrow">&#8594;</span>
                             </p>
@@ -118,7 +118,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                         </p>
                         <br/>
                         <Link href="">
-                            <p className="text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
+                            <p className="py-2 text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
                                onClick={() => openModal("development")}>
                                 Learn More <span className="arrow">&#8594;</span>
                             </p>
@@ -145,7 +145,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                         </p>
                         <br/>
                         <Link href="">
-                            <p className="text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
+                            <p className="py-2 text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
                                onClick={() => openModal("softwareConsultancy")}>
                                 Learn More <span className="arrow">&#8594;</span>
                             </p>
