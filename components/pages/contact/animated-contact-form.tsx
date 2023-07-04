@@ -8,12 +8,13 @@ import { useRef } from "react";
 export default function AnimatedContactFormSection() {
   const lottieRef = useRef<LottieRefCurrentProps>(null)
   return (
-    <div className="padding-x flex flex-col ">
-      <div className="content-center justify-center py-5">
+    <div className="padding-x flex flex-col items-center min-h-[calc(100vh-3.5rem)]">
+      <div className="max-w-7xl">
+             <div className="content-center justify-center  py-5">
         <div>
-          <h1 className="text-center md:text-7xl xl:text-9xl">Contact Us</h1>
+          <h1 className="text-center md:text-6xl lg:text-7xl xl:text-8xl">Contact Us</h1>
         </div>
-        <p className="text-center md:text-lg">
+        <p className="text-center md:text-md">
           Talking is free, and who knows what we might achieve together. <br />{" "}
           Contact us now for an obligation free chat!
         </p>
@@ -35,6 +36,8 @@ export default function AnimatedContactFormSection() {
           <FormSection />
         </div>
       </div>
+      </div>
+ 
     </div>
   );
 }

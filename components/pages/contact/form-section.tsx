@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function FormSection() {
   const styles = {
     ttContactFormRowItem:
-      "flex flex-col flex-grow flex-shrink basis-[350px] self-stretch m-3 p-1",
+      "flex flex-col flex-grow flex-shrink basis-[350px] self-stretch m-1 p-1 xl:p-3 xl:m-2",
     ttContactPageRowItem:
       "flex flex-col flex-grow flex-shrink self-stretch m-3 p-1",
   };
