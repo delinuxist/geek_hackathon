@@ -1,9 +1,11 @@
-import Lottie from "lottie-react";
+import Lottie, {LottieRefCurrentProps} from "lottie-react";
 import animationData from "@/public/assets/json/contact-us.json";
-import Contact from "@/app/contact/page";
 import FormSection from "./form-section";
+import { useRef } from "react";
+
 
 export default function AnimatedContactFormSection() {
+  const lottieRef = useRef<LottieRefCurrentProps>(null)
   return (
     <div className="padding-x flex flex-col ">
       <div className="content-center justify-center py-5">
@@ -15,11 +17,20 @@ export default function AnimatedContactFormSection() {
           Contact us now for an obligation free chat!
         </p>
       </div>
-      <div className="flex flex-row">
-        <div className="w-1/3 max-w-2xl hidden md:contents">
-          <Lottie animationData={animationData} className="" />
+      <div className="flex lg:flex-row flex-col">
+        <div className="lg:w-1/3 max-w-5xl flex justify-center">
+          <Lottie 
+          onMouseEnter={()=> {
+            lottieRef.current?.setSpeed(3)
+          }}
+          onMouseLeave={()=> {
+            lottieRef.current?.setSpeed(1)
+          }}
+          lottieRef={lottieRef}
+          animationData={animationData} 
+          className="w-1/4 lg:w-full" />
         </div>
-        <div className="items-center  flex">
+        <div className="items-center flex">
           <FormSection />
         </div>
       </div>
