@@ -96,3 +96,31 @@ export const clientReview = [
     image: "",
   },
 ];
+
+export const faqs = [
+  {
+    question: "How much time does it take?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    question: "What is your class naming convention?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    question: "How do you communicate?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    question: "I have a bigger project. Can you handle it?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    question: "What is your class naming convention?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
