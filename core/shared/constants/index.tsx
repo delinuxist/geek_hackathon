@@ -72,3 +72,27 @@ export const values = [
       "Turntabl offers world-leading training to their associates before engaging in client projects.",
   },
 ];
+
+export const clientReview = [
+  {
+    review:
+      "The best agency we've worked with so far. They understand our product and are able to add new features with a great focus.",
+    name: "Arynton Senna",
+    title: "Vice president",
+    image: "",
+  },
+  {
+    review:
+      "The best agency we've worked with so far. With great power comes great responsibility. Box for fastest lap.",
+    name: "Max Verstappen",
+    title: "Vice president",
+    image: "",
+  },
+  {
+    review:
+      "The best agency we've worked with so far. They understand our product and are able to add new features with a great focus.",
+    name: "Lewis Hamiltton",
+    title: "Vice president",
+    image: "",
+  },
+];

@@ -4,6 +4,7 @@ import fidelityLogo from "./fidelity-logo.png";
 import finosLogo from "./finos_icon.png";
 import msLogo from "./ms_logo.png";
 import secondStaxLogo from "./second-stax-logo.png";
+import userIconImg from "./user_icon_img.png";
 
 export {
   logo,
@@ -12,4 +13,5 @@ export {
   fidelityLogo,
   msLogo,
   secondStaxLogo,
+  userIconImg,
 };
