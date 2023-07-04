@@ -6,6 +6,8 @@ import { logo } from '../../public/assets/img'
 import { footerLinks } from '@/core/shared/constants'
 import { motion } from 'framer-motion'
 import { slideIn } from '@/core/utils/motion'
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
@@ -21,14 +23,18 @@ const Footer = () => {
           </motion.div>
           <div className='padding-x' >
             <p>Next Revolution in Software Engineering</p>
-            <div className='flex flex-wrap justify-between gap-8 mt-10 text-disruption'>
-              <div className='flex flex-col '>
-                <p className='font-bold '>Email us</p>
-                <p>contact@turntabl.io</p>
+            <div className="flex flex-wrap justify-between gap-8 mt-10 text-disruption">
+              <div className="flex flex-col items-center">
+                <div className="flex items-center">
+                  <FaEnvelope className="mr-2 icon" />
+                  <p className="font-bold">Email us<br/>contact@turntabl.io</p>
+                </div>
               </div>
-              <div>
-                <p className='font-bold '>Call us</p>
-                <p>23348789987712</p>
+              <div className="flex items-center">
+                <div className="flex items-center">
+                  <FaPhone className="mr-2 icon" />
+                  <p className="font-bold">Call us<br/>23348789987712</p>
+                </div>
               </div>
             </div>
           </div>

@@ -78,4 +78,8 @@
     color: white; /* Set the text color to white */
     text-shadow: 1px 1px 0 #b0b0ff, -1px -1px 0 #b0b0ff, 1px -1px 0 #b0b0ff, -1px 1px 0 #b0b0ff; /* Apply shadows to create an outline effect */
   }
+
+  .icon {
+    font-size: 1.6rem; /* Adjust the size as needed */
+  }
 }
