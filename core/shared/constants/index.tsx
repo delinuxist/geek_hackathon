@@ -43,7 +43,7 @@ export const footerLinks = [
       { title: "Twitter", url: "https://twitter.com/turntablio", icon: <FaTwitter /> },
       { title: "Youtube", url: "https://youtube.com/@turntablgh", icon: <FaYoutube /> },
       { title: "Github", url: "/", icon: <FaGithub /> },
-      { title: "Medium", url: "/", icon: <FaMedium /> }
+      { title: "Medium", url: "/", icon: <FaMedium /> },
     ],
   },
 ];
