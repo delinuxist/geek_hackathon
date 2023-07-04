@@ -1,3 +1,4 @@
+"use client";
 import Lottie, {LottieRefCurrentProps} from "lottie-react";
 import animationData from "@/public/assets/json/contact-us.json";
 import FormSection from "./form-section";
