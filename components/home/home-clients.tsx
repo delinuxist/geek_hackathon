@@ -14,9 +14,9 @@ import { Swiper } from "swiper";
 import { clientReview } from "../../core/shared/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCircleArrowLeft,
-  faCircleArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+  faCircleLeft,
+  faCircleRight,
+} from "@fortawesome/free-regular-svg-icons";
 import "swiper/css/bundle";
 import { useEffect, useState } from "react";
 
@@ -60,20 +60,20 @@ export default function HomeClients() {
           width={190}
         />
       </div>
-      <div className="home-client-reviews py-20 flex-center justify-between container padding-x mx-auto gap-10">
-        <div className="home-client-reviews-text self-start">
+      <div className="home-client-reviews py-20 max-[1024px]:py-10 flex-center justify-between max-[1024px]:flex-col container padding-x mx-auto gap-x-10 gap-y-5">
+        <div className="home-client-reviews-text self-start max-[1024px]:text-center w-full">
           <h3 className="leading-none">What our clients say about us</h3>
           <p className="text-white py-5">
             Here it straight from our clients. Real stories, real results.
           </p>
         </div>
-        <div className="home-client-reviews-carousel max-w-[750px] w-full h-[250px]">
+        <div className="home-client-reviews-carousel max-w-[750px] w-full max-[1280px]:w-3/5 max-[1024px]:w-full">
           <div className="swiper relative">
             <div className="swiper-wrapper">
               {clientReview.map((review, index) => {
                 return (
                   <div className="swiper-slide" key={index}>
-                    <p className="font-medium text-[32px]">
+                    <p className="font-medium text-[32px] max-[1024px]:text-[25px]">
                       <q>{review.review}</q>
                     </p>
                     <div className="py-5 flex items-center">
@@ -95,16 +95,18 @@ export default function HomeClients() {
                 );
               })}
             </div>
-            <div className="absolute bottom-10 right-10 z-40">
+            <div className="absolute bottom-[10%] right-12 z-40">
               <FontAwesomeIcon
-                icon={faCircleArrowLeft}
+                icon={faCircleLeft}
                 onClick={() => swiper.slidePrev()}
+                size="2xl"
               />
             </div>
-            <div className="absolute bottom-10 right-2 z-40">
+            <div className="absolute bottom-[10%] right-2 z-40">
               <FontAwesomeIcon
-                icon={faCircleArrowRight}
+                icon={faCircleRight}
                 onClick={() => swiper.slideNext()}
+                size="2xl"
               />
             </div>
           </div>
