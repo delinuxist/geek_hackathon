@@ -1,3 +1,19 @@
+import HomeContact from "@/components/home/home-contact";
+import HomeFaq from "@/components/home/home-faq";
+import HomeWelcome from "@/components/home/home-welcome";
+import HomeHero from "../components/home/home-hero";
+import HomeClients from "../components/home/home-clients";
+import HomeBlog from "../components/home/home-blog";
+
 export default function Home() {
-  return <h1>turntabl</h1>;
+  return (
+    <>
+      <HomeHero></HomeHero>
+      <HomeWelcome></HomeWelcome>
+      <HomeClients></HomeClients>
+      <HomeFaq></HomeFaq>
+      <HomeContact></HomeContact>
+      <HomeBlog></HomeBlog>
+    </>
+  );
 }

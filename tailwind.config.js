@@ -1,5 +1,3 @@
-const { url } = require("inspector");
-
 /** @type {import('tailwindcss').Config} */
 const { screens } = require("tailwindcss/defaultTheme");
 module.exports = {
@@ -19,6 +17,9 @@ module.exports = {
         neuebit: ["var(--font-neuebit)"],
         mondwest: ["var(--font-mondwest)"],
         // sans: ["var(--font-worksans"],
+      },
+      backgroundImage: {
+        "home-hero-number": "url('/assets/img/hero-number-bg.svg')" 
       },
       colors: {
         "pixel-black": "#000000",
