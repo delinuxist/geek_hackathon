@@ -3,7 +3,13 @@ import {
   iotExplained,
   symbolicValues,
 } from "../../../public/assets/img";
-
+import {
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+  FaGithub,
+  FaMedium,
+} from "react-icons/fa";
 export const navLinks = [
   {
     title: "About Us",
@@ -27,27 +33,43 @@ export const footerLinks = [
   {
     title: "About",
     links: [
-      { title: "About Us", url: "/" },
-      { title: "Why Ghana?", url: "/" },
-      { title: "Our People", url: "/" },
-      { title: "Featured Content", url: "/" },
+      { title: "About Us", url: "/about", icon: "" },
+      { title: "Why Ghana?", url: "/", icon: "" },
+      { title: "Our People", url: "/", icon: "" },
+      { title: "Featured Content", url: "/", icon: "" },
     ],
   },
   {
     title: "Company",
     links: [
-      { title: "Events", url: "/" },
-      { title: "Blog", url: "/" },
+      { title: "Events", url: "/", icon: "" },
+      { title: "Blog", url: "/", icon: "" },
     ],
   },
   {
     title: "Socials",
     links: [
-      { title: "LindedIn", url: "https://linkedin.com/company/turntabl" },
-      { title: "Twitter", url: "https://twitter.com/turntablio" },
-      { title: "Youtube", url: "https://youtube.com/@turntablgh" },
-      { title: "Github", url: "/" },
-      { title: "Medium", url: "/" },
+      {
+        title: "LinkedIn",
+        url: "https://linkedin.com/company/turntabl",
+        icon: <FaLinkedin />,
+      },
+      {
+        title: "Twitter",
+        url: "https://twitter.com/turntablio",
+        icon: <FaTwitter />,
+      },
+      {
+        title: "Youtube",
+        url: "https://youtube.com/@turntablgh",
+        icon: <FaYoutube />,
+      },
+      { title: "Github", url: "/", icon: <FaGithub /> },
+      {
+        title: "Medium",
+        url: "https://medium.com/@turntabl.io",
+        icon: <FaMedium />,
+      },
     ],
   },
 ];
@@ -156,5 +178,46 @@ export const blogPosts = [
     link: "https://medium.com/@turntabl.io/iot-explained-why-the-internet-of-things-is-our-future-dbf9107d7382",
     description:
       "Today, we're thinking about the Internet of Things. It's the automation technology that's propelled our businesses and lifestyles well into the 21st century. Here's the turntabl take on the global efficiency revolution.",
+  },
+];
+export const histories = [
+  {
+    title: "Global Code",
+    date: "Jan 2019 - Feb 2020",
+    icon: "image",
+    iconBg: "#383E56",
+    story: "A short story about Global Code",
+  },
+  {
+    title: "Turntabl",
+    date: "Jan 2019 - Feb 2020",
+    icon: "image",
+    iconBg: "#383E56",
+    story: "A short story about Turntabl",
+  },
+];
+
+export const founders = [
+  {
+    name: "Sam",
+    position: "CEO",
+    image: "/assets/img/20230317_113148 (1).jpg",
+    links: [
+      {
+        title: "twitter",
+        url: "",
+      },
+    ],
+  },
+  {
+    name: "Obeng",
+    position: "CTO",
+    image: "/assets/img/20230317_113148 (1).jpg",
+    links: [
+      {
+        title: "twitter",
+        url: "",
+      },
+    ],
   },
 ];

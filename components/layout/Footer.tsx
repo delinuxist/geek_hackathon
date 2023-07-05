@@ -3,9 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { logo } from '../../public/assets/img'
-import { footerLinks } from '../../core/shared/constants'
+import { footerLinks } from '@/core/shared/constants'
 import { motion } from 'framer-motion'
-import { slideIn } from '../../core/utils/motion'
+import { slideIn } from '@/core/utils/motion'
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
@@ -21,36 +23,49 @@ const Footer = () => {
           </motion.div>
           <div className='padding-x' >
             <p>Next Revolution in Software Engineering</p>
-            <div className='flex flex-wrap justify-between gap-8 mt-10 text-disruption'>
-              <div className='flex flex-col '>
-                <p className='font-bold '>Email us</p>
-                <p>contact@turntabl.io</p>
+            <div className="flex flex-wrap justify-between gap-8 mt-10 text-disruption">
+              <div className="flex flex-col items-center">
+                <div className="flex items-center">
+                  <FaEnvelope className="mr-2 icon" />
+                  <p className="font-bold">Email us<br/>contact@turntabl.io</p>
+                </div>
               </div>
-              <div>
-                <p className='font-bold '>Call us</p>
-                <p>23348789987712</p>
+              <div className="flex items-center">
+                <div className="flex items-center">
+                  <FaPhone className="mr-2 icon" />
+                  <p className="font-bold">Call us<br/>23348789987712</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         {/* right content */}
         <div className='flex flex-wrap flex-1 w-full gap-5 xsm:gap-20 padding-x md:justify-end max-md:mt-10'>
-          {footerLinks.map(link => (
-            <div key={link.title} className=' flex flex-col gap-2 min-w-[170px]'>
-              <h3 className='font-bold'>
-                {link.title}
-              </h3>
-              {link.title === "Socials" ? link.links.map(item => (
-                <Link href={""} onClick={() => window.open(item.url, "_blank")} key={item.title} className='hover:text-inspiration'>
-                  {item.title}
-                </Link>
-              )) : link.links.map(item => (
-                <Link href={item.url} key={item.title} className='hover:text-inspiration'>
-                  {item.title}
-                </Link>
-              ))}
-
-            </div>
+          {footerLinks.map((link) => (
+              <div key={link.title} className='flex flex-col gap-2 min-w-[170px]'>
+                <h3 className='font-bold'>{link.title}</h3>
+                {link.title === 'Socials' ? (
+                    <div className='flex gap-2'>
+                      {link.links.map((item) => (
+                          <a
+                              href={item.url}
+                              key={item.title}
+                              className='hover:text-inspiration'
+                              target='_blank'
+                              rel='noopener noreferrer'
+                          >
+                            {item.icon}
+                          </a>
+                      ))}
+                    </div>
+                ) : (
+                    link.links.map((item) => (
+                        <Link href={item.url} key={item.title} className='hover:text-inspiration'>
+                          {item.title}
+                        </Link>
+                    ))
+                )}
+              </div>
           ))}
         </div>
       </div>
