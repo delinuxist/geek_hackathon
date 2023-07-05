@@ -1,5 +1,5 @@
-import HomeBlog from "@/components/home/home-blog";
-import HomeClients from "@/components/home/home-clients";
+import HomeBlog from "../components/home/home-blog";
+import HomeClients from "../components/home/home-clients";
 import HomeContact from "@/components/home/home-contact";
 import HomeFaq from "@/components/home/home-faq";
 import HomeWelcome from "@/components/home/home-welcome";
