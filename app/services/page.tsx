@@ -12,8 +12,12 @@ import SoftwareConsultancy from "@/components/pages/services/software-consultanc
 export default function Service() {
     const [showModal, setShowModal] = useState(false);
     const [modalContent, setModalContent] = useState<ReactNode | null>(null);
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     const openModal = (content: string) => {
+
+        setScrollPosition(window.scrollY);
+        
         if (content === "partnership") {
             setModalContent(() => <Partnership />);
         } else if (content === "projectManagement") {
@@ -29,6 +33,8 @@ export default function Service() {
     const closeModal = () => {
         setShowModal(false);
         setModalContent(null);
+
+        window.scrollTo(0, scrollPosition);
     };
 
     return (
