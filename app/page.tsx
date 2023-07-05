@@ -1,9 +1,9 @@
-import HomeBlog from "../components/home/home-blog";
-import HomeClients from "../components/home/home-clients";
 import HomeContact from "@/components/home/home-contact";
 import HomeFaq from "@/components/home/home-faq";
 import HomeWelcome from "@/components/home/home-welcome";
 import HomeHero from "../components/home/home-hero";
+import HomeClients from "../components/home/home-clients";
+import HomeBlog from "../components/home/home-blog";
 
 export default function Home() {
   return (
