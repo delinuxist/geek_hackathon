@@ -1,3 +1,4 @@
+import HomeBlog from "@/components/home/home-blog";
 import HomeClients from "@/components/home/home-clients";
 import HomeContact from "@/components/home/home-contact";
 import HomeFaq from "@/components/home/home-faq";
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeClients></HomeClients>
       <HomeFaq></HomeFaq>
       <HomeContact></HomeContact>
+      <HomeBlog></HomeBlog>
     </>
   );
 }

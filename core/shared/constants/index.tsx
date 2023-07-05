@@ -1,3 +1,9 @@
+import {
+  envBlog,
+  iotExplained,
+  symbolicValues,
+} from "../../../public/assets/img";
+
 export const navLinks = [
   {
     title: "About Us",
@@ -122,5 +128,33 @@ export const faqs = [
     question: "What is your class naming convention?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
+
+export const blogPosts = [
+  {
+    image: envBlog,
+    date: "26 June 2023",
+    title: "Is environmental sustainability pretentious or boring?",
+    link: "https://medium.com/@turntabl.io/is-environmental-sustainability-pretentious-or-boring-a50e5b8008af",
+    description:
+      "Recently, a few turntablrs and I attended a live, environmental podcast with GOTO and participated in some intriguing conversations about sustainability.",
+  },
+  {
+    image: symbolicValues,
+    date: "15 May 2023",
+    title:
+      "Symbolic Values: Why We Wove Our Software Consultancy from Ghana's Historic Fabrics",
+    link: "https://medium.com/@turntabl.io/symbolic-values-why-we-wove-our-software-consultancy-from-ghanas-historic-fabrics-69fb0dc189ba",
+    description:
+      "You may have noticed one of these symbols on local traditional clothing and wondered why it's there. What is it? Where does it come from?",
+  },
+  {
+    image: iotExplained,
+    date: "02 May 2023",
+    title: "IoT Explained: Why The Internet of Things is Our Future",
+    link: "https://medium.com/@turntabl.io/iot-explained-why-the-internet-of-things-is-our-future-dbf9107d7382",
+    description:
+      "Today, we're thinking about the Internet of Things. It's the automation technology that's propelled our businesses and lifestyles well into the 21st century. Here's the turntabl take on the global efficiency revolution.",
   },
 ];
