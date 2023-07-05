@@ -12,7 +12,7 @@ type Props = {
 export default function BlogPostCard(props: { post: Props }) {
   const post = props.post;
   return (
-    <article className="blog-post h-[609px] w-[405px] overflow-hidden">
+    <article className="blog-post h-[609px] w-[405px] max-[600px]:w-[350px] overflow-hidden">
       <div className="blog-post-img h-[285px] w-full overflow-hidden">
         <Image
           src={post.image}
