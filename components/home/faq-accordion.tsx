@@ -1,6 +1,6 @@
 "use client";
 
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
@@ -19,7 +19,7 @@ export default function FaqAccordion(props: Props) {
         <p className="mr-auto text-[24px] font-medium">{props.question}</p>
         <FontAwesomeIcon
           className="cursor-pointer"
-          icon={faPlus}
+          icon={expanded ? faMinus : faPlus}
           onClick={() => setExpanded(!expanded)}
         />
       </div>

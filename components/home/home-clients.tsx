@@ -100,7 +100,7 @@ export default function HomeClients() {
                 icon={faCircleLeft}
                 onClick={() => swiper.slidePrev()}
                 size="2xl"
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-insightful"
               />
             </div>
             <div className="absolute bottom-[10%] right-2 z-40">
@@ -108,7 +108,7 @@ export default function HomeClients() {
                 icon={faCircleRight}
                 onClick={() => swiper.slideNext()}
                 size="2xl"
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-insightful"
               />
             </div>
           </div>

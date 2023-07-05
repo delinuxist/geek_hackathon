@@ -31,7 +31,7 @@ export default function BlogPostCard(props: { post: Props }) {
         href={post.link}
         className="text-pixel-black text-center mt-3 inline-block hover:underline"
       >
-        Get in touch with us &#10230;
+        Read more &#10230;
       </Link>
     </article>
   );
