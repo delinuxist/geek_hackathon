@@ -7,11 +7,14 @@ import {
   HeroAboutThree,
 } from "@/public/assets/img";
 import { ProgrammingEffect } from "@/public/assets/json";
+import { textVariant } from '../../../core/utils/motion';
+import { motion } from 'framer-motion';
+import withAnimate from '../../hoc/WithAnimate';
 
 const Hero = () => {
   return (
     <div className='padding-x w-[100%] min-h-screen bg-white flex flex-col md:grid grid-cols-2'>
-      <div className='w-[100%] flex justify-center items-center relative'>
+      <motion.div variants={textVariant(0.1)} className='w-[100%] flex justify-center items-center relative'>
         <Lottie onComplete={() => {}} animationData={ProgrammingEffect} />
         <div className='top-0 left-0 flex-col hidden xl:flex xl:absolute'>
           {Array.from([1, 2, 3, 4]).map((i) => (
@@ -25,9 +28,9 @@ const Hero = () => {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
       <div className='w-[100%] flex flex-col gap-3 relative mt-10'>
-        <div className='w-[100%] z-10 inset-0'>
+        <motion.div variants={textVariant(0.1)} className='w-[100%] z-10 inset-0'>
           <h1 className={``}>
             We Are Turntabl,
             <br />
@@ -38,7 +41,7 @@ const Hero = () => {
             <br />
             Engineering Solutions To Bussinesses All Over the World
           </h1>
-        </div>
+        </motion.div>
 
         <div
           className='absolute right-0 
@@ -62,4 +65,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default withAnimate(Hero);

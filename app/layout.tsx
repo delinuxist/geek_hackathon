@@ -53,7 +53,7 @@ export default function RootLayout({
         className={`${neuebit.variable} ${mondwest.variable} ${workSans.className} min-h-screen flex flex-col`}
       >
         <Navbar />
-        <main className="w-full flex-1">{children}</main>
+        <main className="flex-1 w-full">{children}</main>
         <Footer />
       </body>
     </html>
