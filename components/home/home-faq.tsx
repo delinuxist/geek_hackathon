@@ -4,7 +4,7 @@ import FaqAccordion from "./faq-accordion";
 export default function HomeFaq() {
   return (
     <section className="home-faq py-14 bg-white">
-      <div className="content padding-x container mx-auto gap-x-10 gap-y-5 flex flex-col md:flex-row md:justify-between">
+      <div className="content padding-x container mx-auto gap-x-10 gap-y-5 flex flex-col md:flex-row md:justify-center">
         <div className="home-faq-text">
           <h3 className="leading-none">Frequently asked questions</h3>
           <p className="py-3">Contact us for more info</p>

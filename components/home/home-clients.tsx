@@ -60,7 +60,7 @@ export default function HomeClients() {
           width={190}
         />
       </div>
-      <div className="home-client-reviews py-20 max-[1024px]:py-10 flex-center justify-between max-[1024px]:flex-col container padding-x mx-auto gap-x-10 gap-y-5">
+      <div className="home-client-reviews py-20 max-[1024px]:py-10 flex-center max-[1024px]:flex-col container padding-x mx-auto gap-x-10 gap-y-5">
         <div className="home-client-reviews-text self-start max-[1024px]:text-center w-full">
           <h3 className="leading-none">What our clients say about us</h3>
           <p className="text-white py-5">

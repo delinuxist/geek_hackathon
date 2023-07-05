@@ -13,6 +13,9 @@
   h1 {
     @apply text-[60px] font-bold font-mondwest;
   }
+  h2 {
+    @apply text-[54px] font-neuebit font-bold;
+  }
   h3 {
     @apply font-neuebit text-[38px] font-semibold;
   }
@@ -89,5 +92,16 @@
   }
   .home-hero-text h1 span {
     @apply block text-start;
+  }
+  .home-contact-text {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.56) 100%),url("/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .form-group {
+    @apply mb-5 text-start;
+  }
+  .form-group input {
+    @apply mt-3;
   }
 }
