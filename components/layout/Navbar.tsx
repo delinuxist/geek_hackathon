@@ -43,8 +43,9 @@ const Navbar = () => {
               return (
                 <li
                   key={link.title}
-                  className={`mr-4 last:mr-0 nav-link relative ${link.url === pathName ? "nav-link-selected" : ""
-                    }`}
+                  className={`mr-4 last:mr-0 nav-link relative ${
+                    link.url === pathName ? "nav-link-selected" : ""
+                  }`}
                 >
                   <Link href={link.url}>{link.title}</Link>
                   <div className="absolute nav-link-indicator"></div>
@@ -68,8 +69,9 @@ const Navbar = () => {
       </nav>
       {/* mobile nav items */}
       <nav
-        className={`nav-mobile md:hidden absolute h-full w-full top-0 left-0 z-10 bg-disruption -translate-x-full transition-all duration-700 ${menuOpen ? "translate-x-0" : ""
-          }`}
+        className={`nav-mobile md:hidden fixed h-screen w-full top-0 left-0 z-50 bg-disruption -translate-x-full transition-all duration-700 ${
+          menuOpen ? "translate-x-0" : ""
+        }`}
       >
         <div className="flex justify-end p-5 nav-mobile-close">
           <div
@@ -81,6 +83,9 @@ const Navbar = () => {
         </div>
         <ul className="flex-col mt-28 flex-center">
           {navLinks.map((link, index) => {
+            if (pathName !== "/" && link.url === "#clients") {
+              return;
+            }
             return (
               <li
                 key={link.title}
