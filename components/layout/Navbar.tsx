@@ -40,6 +40,9 @@ const Navbar = () => {
           {/* nav links */}
           <ul className="hidden md:flex">
             {navLinks.map((link) => {
+              if (pathName !== "/" && link.url === "#clients") {
+                return;
+              }
               return (
                 <li
                   key={link.title}
