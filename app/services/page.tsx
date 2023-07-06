@@ -8,6 +8,7 @@ import Partnership from "@/components/pages/services/partnerships";
 import ProjectManagement from "@/components/pages/services/project-management";
 import Development from "@/components/pages/services/development";
 import SoftwareConsultancy from "@/components/pages/services/software-consultancy";
+import AnimatePresenceWrapper from '@/components/utils/AnimatePresenceWrapper';
 
 export default function Service() {
     const [showModal, setShowModal] = useState(false);
@@ -38,19 +39,21 @@ export default function Service() {
     };
 
     return (
-        <section className="h-full bg-white">
-            <Hero />
+        <AnimatePresenceWrapper>
+            <section className="h-full bg-white">
+                <Hero />
 
-            <ServicesSection
-                openModal={openModal}
-                closeModal={closeModal}
-            />
+                <ServicesSection
+                    openModal={openModal}
+                    closeModal={closeModal}
+                />
 
-            <Modal
-                isVisible={showModal}
-                onClose={closeModal}
-                content={modalContent}
-            />
-        </section>
+                <Modal
+                    isVisible={showModal}
+                    onClose={closeModal}
+                    content={modalContent}
+                />
+            </section>
+        </AnimatePresenceWrapper>
     );
 }
