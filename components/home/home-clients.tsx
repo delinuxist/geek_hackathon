@@ -33,7 +33,7 @@ export default function HomeClients() {
     setSwiper(swiper);
   }, []);
   return (
-    <section className="home-client bg-inspiration padding-x py-7">
+    <section className="home-client bg-inspiration padding-x py-7" id="clients">
       <div className="home-client-list container mx-auto grid gap-y-10 max-[600px]:gap-x-5 max-[1016px]:grid-cols-2 grid-cols-4 grid-rows-1 items-center">
         <Image
           className="h-fit justify-self-center"
