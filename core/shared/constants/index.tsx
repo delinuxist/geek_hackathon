@@ -21,7 +21,7 @@ export const navLinks = [
   },
   {
     title: "Clients",
-    url: "/clients",
+    url: "#clients",
   },
   {
     title: "Contact Us",

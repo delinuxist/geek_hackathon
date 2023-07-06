@@ -21,7 +21,7 @@ import "swiper/css/bundle";
 import { useEffect, useState } from "react";
 
 export default function HomeClients() {
-  const [swiper, setSwiper] = useState<Swiper>(null);
+  const [swiper, setSwiper] = useState<Swiper | null>(null);
   useEffect(() => {
     const swiper = new Swiper(".swiper", {
       loop: true,
@@ -33,7 +33,7 @@ export default function HomeClients() {
     setSwiper(swiper);
   }, []);
   return (
-    <section className="home-client bg-inspiration padding-x py-7">
+    <section className="home-client bg-inspiration padding-x py-7" id="clients">
       <div className="home-client-list container mx-auto grid gap-y-10 max-[600px]:gap-x-5 max-[1016px]:grid-cols-2 grid-cols-4 grid-rows-1 items-center">
         <Image
           className="h-fit justify-self-center"
@@ -98,7 +98,7 @@ export default function HomeClients() {
             <div className="absolute bottom-[10%] right-12 z-40">
               <FontAwesomeIcon
                 icon={faCircleLeft}
-                onClick={() => swiper.slidePrev()}
+                onClick={() => swiper!.slidePrev()}
                 size="2xl"
                 className="cursor-pointer hover:text-insightful"
               />
@@ -106,7 +106,7 @@ export default function HomeClients() {
             <div className="absolute bottom-[10%] right-2 z-40">
               <FontAwesomeIcon
                 icon={faCircleRight}
-                onClick={() => swiper.slideNext()}
+                onClick={() => swiper!.slideNext()}
                 size="2xl"
                 className="cursor-pointer hover:text-insightful"
               />
