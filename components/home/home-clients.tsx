@@ -21,7 +21,7 @@ import "swiper/css/bundle";
 import { useEffect, useState } from "react";
 
 export default function HomeClients() {
-  const [swiper, setSwiper] = useState<Swiper>(null);
+  const [swiper, setSwiper] = useState<Swiper | null>(null);
   useEffect(() => {
     const swiper = new Swiper(".swiper", {
       loop: true,
