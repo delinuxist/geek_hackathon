@@ -99,7 +99,7 @@ const Navbar = () => {
                   className="px-4 py-3 text-3xl uppercase transition-all duration-500 nav-mobile-link"
                   href={link.url}
                 >
-                  0{index + 1} {link.title}
+                  {link.title}
                 </Link>
               </li>
             );
