@@ -16,7 +16,7 @@ const Founders = () => {
         <div className='hidden sm:flex h-[10rem] mt-2 w-full bg-white rounded-lg  items-center justify-center shadow-2xl'>
           <div className="w-[90%] h-[90%]" style={{ backgroundImage: 'url("https://www.webdew.com/hubfs/dotted-bg.svg")', backgroundRepeat: "no-repeat", backgroundPosition: 'center', backgroundSize: 'contain' }} />
         </div>
-        <div className="flex flex-col items-center justify-center w-full gap-10 sm:-mt-24 md:flex-row md:padding-x">
+        <div className="flex flex-col items-center justify-center w-full gap-10 lg:gap-20 sm:-mt-24 md:flex-row lg:padding-x">
           {founders.map((founder, index) => (
             <FoundersCard key={founder.name} {...founder} index={index} />
           ))}

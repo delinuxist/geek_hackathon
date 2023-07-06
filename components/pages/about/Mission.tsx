@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { textVariant } from '../../../core/utils/motion';
 import withAnimate from '../../hoc/WithAnimate';
+import { ImageSlider } from '../../utils';
 
 const Mission = () => {
   return (
@@ -18,7 +19,7 @@ const Mission = () => {
         </motion.div>
       </div>
       <div className={'bg-white h-[20rem] w-[100%]'}>
-
+        <ImageSlider />
       </div>
     </div>
   )
