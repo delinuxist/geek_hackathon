@@ -10,7 +10,7 @@ import { CustomButton } from '../utils'
 const FoundersCard = (Props: FoundersCardProps) => {
   return (
     <motion.div variants={fadeIn("up", "spring", Props.index * 0.5, 0.75)} className=" md:w-[50%] w-full">
-      <Tilt className="w-full p-4 bg-insightful border shadow-lg group rounded-2xl border-t-welcoming border-r-inspiration border-l-white border-b-disruption">
+      <Tilt className="w-full p-4 border shadow-lg bg-disruption group rounded-2xl border-t-welcoming border-r-inspiration border-l-white border-b-disruption">
         {/* <div className="absolute top-0 -z-[5] -right-3 w-[101%] h-[103%] rounded-[2rem] bg-pixel-black rounded-br-3xl" /> */}
         <div className="w-full">
           <div className='relative w-full h-[400px]'>
