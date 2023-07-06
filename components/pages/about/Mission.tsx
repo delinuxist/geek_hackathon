@@ -6,7 +6,7 @@ import { ImageSlider } from '../../utils';
 
 const Mission = () => {
   return (
-    <div className="w-[100%] flex flex-col md:grid md:grid-cols-2 padding-x padding-y justify-between gap-10">
+    <div className="w-[100%] flex flex-col md:grid md:grid-cols-2 padding-x padding-y justify-between gap-10 mb-4">
       <div>
         <motion.div variants={textVariant(0.1)}>
           <p className="text-2xl">Company&apos;s Mission</p>
@@ -18,7 +18,7 @@ const Mission = () => {
           </p>
         </motion.div>
       </div>
-      <div className={'bg-white h-[20rem] w-[100%]'}>
+      <div className={'bg-white h-[25rem] w-[100%] rounded-2xl'}>
         <ImageSlider />
       </div>
     </div>
