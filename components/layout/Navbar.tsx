@@ -72,7 +72,7 @@ const Navbar = () => {
       </nav>
       {/* mobile nav items */}
       <nav
-        className={`nav-mobile md:hidden absolute h-full w-full top-0 left-0 z-10 bg-disruption -translate-x-full transition-all duration-700 ${
+        className={`nav-mobile md:hidden fixed h-screen w-full top-0 left-0 z-50 bg-disruption -translate-x-full transition-all duration-700 ${
           menuOpen ? "translate-x-0" : ""
         }`}
       >
@@ -86,6 +86,9 @@ const Navbar = () => {
         </div>
         <ul className="flex-col mt-28 flex-center">
           {navLinks.map((link, index) => {
+            if (pathName !== "/" && link.url === "#clients") {
+              return;
+            }
             return (
               <li
                 key={link.title}
@@ -96,7 +99,7 @@ const Navbar = () => {
                   className="px-4 py-3 text-3xl uppercase transition-all duration-500 nav-mobile-link"
                   href={link.url}
                 >
-                  0{index + 1} {link.title}
+                  {link.title}
                 </Link>
               </li>
             );
