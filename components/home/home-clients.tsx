@@ -98,7 +98,7 @@ export default function HomeClients() {
             <div className="absolute bottom-[10%] right-12 z-40">
               <FontAwesomeIcon
                 icon={faCircleLeft}
-                onClick={() => swiper.slidePrev()}
+                onClick={() => swiper!.slidePrev()}
                 size="2xl"
                 className="cursor-pointer hover:text-insightful"
               />
@@ -106,7 +106,7 @@ export default function HomeClients() {
             <div className="absolute bottom-[10%] right-2 z-40">
               <FontAwesomeIcon
                 icon={faCircleRight}
-                onClick={() => swiper.slideNext()}
+                onClick={() => swiper!.slideNext()}
                 size="2xl"
                 className="cursor-pointer hover:text-insightful"
               />
