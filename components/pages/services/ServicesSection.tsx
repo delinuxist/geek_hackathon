@@ -24,8 +24,8 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                     <div className='flex justify-center items-center'>
                         <motion.div initial="hidden" whileInView="show"
                                     variants={fadeIn("center", "tween", 0, 0.8)}>
-                            <Image src="/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg"
-                                   width={650} height={650} alt="One Developer Working"/>
+                            <Image className='rounded-xl' src="/assets/img/tt2.jpeg"
+                                   width={650} height={650} alt="Two Developers Working"/>
                         </motion.div>
                     </div>
                     <div>
@@ -85,7 +85,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                     <div className='flex justify-center items-center'>
                         <motion.div initial="hidden" whileInView="show"
                                     variants={fadeIn("center", "tween", 0, 0.8)}>
-                            <Image src="/assets/img/header-approach.jpg" width={650} height={650} alt="Five Team members in Discussion"/>
+                            <Image className='rounded-xl' src="/assets/img/tt11.jpeg" width={650} height={650} alt="Several Team members in a Meeting"/>
                         </motion.div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                     <div className='flex justify-center items-center'>
                         <motion.div initial="hidden" whileInView="show"
                                     variants={fadeIn("center", "tween", 0, 0.8)}>
-                            <Image src="/assets/img/service-header.jpg" width={650} height={650} alt="Pair Reviewing Work Together"/>
+                            <Image className='rounded-xl' src="/assets/img/tt1.jpeg" width={650} height={650} alt="Team Photo"/>
                         </motion.div>
                     </div>
                     <div>
@@ -154,7 +154,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                     <div className='flex justify-center items-center'>
                         <motion.div initial="hidden" whileInView="show"
                                     variants={fadeIn("center", "tween", 0, 0.8)}>
-                            <Image src="/assets/img/IMG_9005.jpg" width={650} height={650} alt="Team photo"/>
+                            <Image className='rounded-xl' src="/assets/img/tt4.jpeg" width={650} height={650} alt="Pair Reveiwing code together"/>
                         </motion.div>
                     </div>
                 </div>
