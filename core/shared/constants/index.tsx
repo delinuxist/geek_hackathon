@@ -199,25 +199,128 @@ export const histories = [
 
 export const founders = [
   {
-    name: "Sam",
-    position: "CEO",
+    info: {
+      name: "Sam",
+      position: "CEO",
+      links: [
+        {
+          icon: <FaTwitter />,
+          url: "",
+        },
+      ],
+      content: ""
+    },
     image: "/assets/img/20230317_113148 (1).jpg",
-    links: [
-      {
-        title: "twitter",
-        url: "",
-      },
-    ],
   },
   {
-    name: "Obeng",
-    position: "CTO",
+    info: {
+      name: "Obeng",
+      position: "CTO",
+      links: [
+        {
+          icon: <FaTwitter />,
+          url: "",
+        },
+      ],
+      content: ""
+    },
     image: "/assets/img/20230317_113148 (1).jpg",
-    links: [
-      {
-        title: "twitter",
-        url: "",
-      },
-    ],
   },
 ];
+
+export const about_slider = [
+  {
+    url: '/assets/img/20230301_144951.jpg',
+  },
+  {
+    url: '/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg',
+  },
+  {
+    url: '/assets/img/IMG_9005.jpg',
+  },
+
+  {
+    url: '/assets/img/_MG_3880.jpg',
+  },
+  {
+    url: '/assets/img/IMG_9383.jpg',
+  },
+];
+
+export const ourPeoples = [
+  {
+    info: {
+      name: "Enock",
+      position: "Software Engineering Lead",
+      content: "Currently residing in Accra, Ghana, Enock has a Bachelor of Science in Computer Science from Kwame Nkrumah University of Science and Technology. Enock is driven and self-motivated and enjoys experimenting with new tools and technologies. He always strives to better himself and loves helping those around him to also improve. Enock currently leads software projects at turntabl, transforming client problems with innovative solutions.",
+      links: [
+        {
+          icon: <FaTwitter />,
+          url: "http://www.twitter.com/enock",
+        },
+      ],
+    },
+    image: {
+      url: "/assets/img/Enock Boadi-Ansah .png",
+      width: 330,
+      height: 350,
+    },
+  },
+  {
+    info: {
+      name: "Princess",
+      position: "Software Engineer",
+      content: "i am Princess with 8 years of experience",
+      links: [
+        {
+          icon: <FaTwitter />,
+          url: "twitter.com/princess",
+        },
+      ],
+    },
+    image: {
+      url: "/assets/img/contact-header.jpg",
+      width: 2800,
+      height: 1300,
+    },
+  },
+  {
+    info: {
+      name: "Bowusu",
+      position: "Software Engineer",
+
+      content: "i am Bowusu with 8 years of experience",
+      links: [
+        {
+          icon: <FaTwitter />,
+          url: "twitter.com/bowusu",
+        },
+      ],
+    },
+    image: {
+      url: "/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg",
+      width: 1999,
+      height: 1333,
+    },
+  },
+  {
+    info: {
+      name: "Chimaobi",
+      position: "Software Engineering Lead",
+
+      content: "Chima has over 5 years of experience in research and production as a software engineer and data specialist. With a postgraduate degree in Information Systems from the University of Ibadan, Chima is also keen to acquire skills in new technologies, provide value, and has an unending enthusiasm for solving problems. Chima is fascinated by mentoring, teaching and career development, which aligns with the core values of turntabl.",
+      links: [
+        {
+          icon: <FaTwitter />,
+          url: "twitter.com/chima",
+        },
+      ],
+    },
+    image: {
+      url: "/assets/img/Chimaobim Ibebunjoh .png",
+      width: 330,
+      height: 350,
+    },
+  },
+
+]
