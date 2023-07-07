@@ -7,16 +7,16 @@ import { footerLinks } from '@/core/shared/constants'
 import { motion } from 'framer-motion'
 import { slideIn } from '@/core/utils/motion'
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { withAnimate } from '../hoc'
 
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col mt-5 text-white bg-pixel-black '>
+    <footer className='flex flex-col text-white bg-pixel-black '>
       <div className='flex flex-wrap justify-between gap-5 py-10 max-md:flex-col '>
         {/* left content */}
         <div className='flex flex-col items-start justify-start gap-6 '>
-          <motion.div initial='hidden'
-            whileInView={"show"}
+          <motion.div
             variants={slideIn("left", "spring", 0, 2)}
             className='w-[50%] h-10 padding-x bg-disruption flex items-center justify-center rounded-r-sm'>
             <Image src={logo} alt='logo' width={118} height={18} className='object-contain' />
@@ -27,13 +27,13 @@ const Footer = () => {
               <div className="flex flex-col items-center">
                 <div className="flex items-center">
                   <FaEnvelope className="mr-2 icon" />
-                  <p className="font-bold">Email us<br/>contact@turntabl.io</p>
+                  <p className="font-bold">Email us<br />contact@turntabl.io</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <div className="flex items-center">
                   <FaPhone className="mr-2 icon" />
-                  <p className="font-bold">Call us<br/>23348789987712</p>
+                  <p className="font-bold">Call us<br />23348789987712</p>
                 </div>
               </div>
             </div>
@@ -42,30 +42,30 @@ const Footer = () => {
         {/* right content */}
         <div className='flex flex-wrap flex-1 w-full gap-5 xsm:gap-20 padding-x md:justify-end max-md:mt-10'>
           {footerLinks.map((link) => (
-              <div key={link.title} className='flex flex-col gap-2 min-w-[170px]'>
-                <h3 className='font-bold'>{link.title}</h3>
-                {link.title === 'Socials' ? (
-                    <div className='flex gap-2'>
-                      {link.links.map((item) => (
-                          <a
-                              href={item.url}
-                              key={item.title}
-                              className='hover:text-inspiration'
-                              target='_blank'
-                              rel='noopener noreferrer'
-                          >
-                            {item.icon}
-                          </a>
-                      ))}
-                    </div>
-                ) : (
-                    link.links.map((item) => (
-                        <Link href={item.url} key={item.title} className='hover:text-inspiration'>
-                          {item.title}
-                        </Link>
-                    ))
-                )}
-              </div>
+            <div key={link.title} className='flex flex-col gap-2 min-w-[170px]'>
+              <h3 className='font-bold'>{link.title}</h3>
+              {link.title === 'Socials' ? (
+                <div className='flex gap-2'>
+                  {link.links.map((item) => (
+                    <a
+                      href={item.url}
+                      key={item.title}
+                      className='hover:text-inspiration'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      {item.icon}
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                link.links.map((item) => (
+                  <Link href={item.url} key={item.title} className='hover:text-inspiration'>
+                    {item.title}
+                  </Link>
+                ))
+              )}
+            </div>
           ))}
         </div>
       </div>
@@ -85,4 +85,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default withAnimate(Footer)

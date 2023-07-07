@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import { MouseEventHandler } from "react";
+import { JsxElement } from 'typescript';
 
 export interface CustomButtonProps {
   title: string;
@@ -20,12 +21,27 @@ export interface HistoryCardProps {
 }
 
 export interface FoundersCardProps {
+  info: InfoProps;
+  image: string;
+}
+export interface InfoProps {
   name: string;
   position: string;
-  image: string;
-  index: number;
   links: {
-    title: string;
+    icon: JSX.Element;
     url: string;
   }[];
+  content: string;
+}
+
+export interface SliderImageProps {
+  images: {
+    url: string;
+  }[];
+}
+
+export interface DisplayInfoProps {
+  isOpen: boolean;
+  closeModal: () => void;
+  info: InfoProps | undefined;
 }
