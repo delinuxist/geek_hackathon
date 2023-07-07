@@ -5,6 +5,7 @@ import {
   HeroAboutFour,
   HeroAboutOne,
   HeroAboutThree,
+  ThumbsUpWelcoming,
 } from "@/public/assets/img";
 import { ProgrammingEffect } from "@/public/assets/json";
 import { textVariant } from '../../../core/utils/motion';
@@ -39,7 +40,7 @@ const Hero = () => {
               Providing Innovative Software
             </span>
             <br />
-            Engineering Solutions To Bussinesses All Over the World
+            Engineering Solutions To Businesses All Over the World <span className="animate-pulse"><Image src={ThumbsUpWelcoming} alt={"thumbsup_welcoming"} width={150} height={150} /></span>
           </h1>
         </motion.div>
 

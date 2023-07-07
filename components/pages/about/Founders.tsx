@@ -18,12 +18,10 @@ const Founders = () => {
         </div>
         <div className="flex flex-col items-center justify-center w-full gap-10 lg:gap-20 sm:-mt-24 md:flex-row lg:padding-x">
           {founders.map((founder, index) => (
-            <FoundersCard key={founder.name} {...founder} index={index} />
+            <FoundersCard key={founder.info.name} index={index} Props={{ info: founder.info, image: founder.image }} />
           ))}
         </div>
-
       </div>
-
     </div>
   );
 }
