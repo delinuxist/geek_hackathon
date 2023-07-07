@@ -2,12 +2,12 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { withAnimate } from '../../hoc'
-import { textVariant, fadeIn } from '../../../core/utils/motion'
-import { ourPeoples } from '../../../core/shared/constants'
+import { textVariant, fadeIn } from '@/core/utils/motion'
+import { ourPeoples } from '@/core/shared/constants'
 import Image from 'next/image'
 import { CustomButton } from '../../utils'
 import { DisplayInfo } from '../../utils'
-import { InfoProps } from '../../../core/shared/interface'
+import { InfoProps } from '@/core/shared/interface'
 
 const OurTeam = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -24,29 +24,29 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                     <div className='flex justify-center items-center'>
                         <motion.div initial="hidden" whileInView="show"
                                     variants={fadeIn("center", "tween", 0, 0.8)}>
-                            <Image src="/assets/img/service-header.jpg" width={650} height={650} alt="Pair Reviewing Work Together"/>
+                            <Image src="/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg"
+                                   width={650} height={650} alt="One Developer Working"/>
                         </motion.div>
                     </div>
                     <div>
-                        <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Partnerships</h3>
+                        <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Development</h3>
                         <br/>
                         <p className="text-pixel-black">
-                            In today&apos;s fast-paced and interconnected business landscape, successful companies
-                            understand the power of collaboration and strategic partnerships. At Turntabl, we have
-                            reimagined the concept of partnership and developed a unique approach known as
-                            <strong> &ldquo;Partnership as a Service.&rdquo;</strong>
-                            <br/>
-                            Our Partnership as a Service offering goes beyond the
-                            traditional vendor-client relationship, aiming to foster mutually beneficial and
-                            long-lasting collaborations that drive innovation, growth, and shared success.
-
-                            Partner with Turntabl today and design low-cost, high-quality technology ethically and
-                            sustainably.
+                            At Turntabl, we specialize in delivering cutting-edge software solutions
+                            tailored to meet the unique needs and challenges of modern businesses. With our deep
+                            expertise, agile methodologies, and customer-centric approach, we empower organizations
+                            to harness the power of technology and drive innovation through our comprehensive
+                            Software Development services.<br/>
+                            We understand that every business has distinct requirements and goals. That&apos;s why
+                            our Software Development services are highly customizable to ensure a perfect fit for
+                            your organization.
+                            Our personnel are adaptable and resourceful. We chew through JIRAs just as easily as we
+                            develop your UX or next generation micro-service layer.
                         </p>
                         <br/>
                         <Link href="">
                             <p className="py-2 text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
-                               onClick={() => openModal("partnership")}>
+                               onClick={() => openModal("development")}>
                                 Learn More <span className="arrow">&#8594;</span>
                             </p>
                         </Link>
@@ -97,29 +97,29 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
                     <div className='flex justify-center items-center'>
                         <motion.div initial="hidden" whileInView="show"
                                     variants={fadeIn("center", "tween", 0, 0.8)}>
-                            <Image src="/assets/img/BOwusuNyantekyi_turntabl_pre-edits_20220602_022_V2.jpg"
-                                   width={650} height={650} alt="One Developer Working"/>
+                            <Image src="/assets/img/service-header.jpg" width={650} height={650} alt="Pair Reviewing Work Together"/>
                         </motion.div>
                     </div>
                     <div>
-                        <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Development</h3>
+                        <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Partnerships</h3>
                         <br/>
                         <p className="text-pixel-black">
-                            At Turntabl, we specialize in delivering cutting-edge software solutions
-                            tailored to meet the unique needs and challenges of modern businesses. With our deep
-                            expertise, agile methodologies, and customer-centric approach, we empower organizations
-                            to harness the power of technology and drive innovation through our comprehensive
-                            Software Development services.<br/>
-                            We understand that every business has distinct requirements and goals. That&apos;s why
-                            our Software Development services are highly customizable to ensure a perfect fit for
-                            your organization.
-                            Our personnel are adaptable and resourceful. We chew through JIRAs just as easily as we
-                            develop your UX or next generation micro-service layer.
+                            In today&apos;s fast-paced and interconnected business landscape, successful companies
+                            understand the power of collaboration and strategic partnerships. At Turntabl, we have
+                            reimagined the concept of partnership and developed a unique approach known as
+                            <strong> &ldquo;Partnership as a Service.&rdquo;</strong>
+                            <br/>
+                            Our Partnership as a Service offering goes beyond the
+                            traditional vendor-client relationship, aiming to foster mutually beneficial and
+                            long-lasting collaborations that drive innovation, growth, and shared success.
+
+                            Partner with Turntabl today and design low-cost, high-quality technology ethically and
+                            sustainably.
                         </p>
                         <br/>
                         <Link href="">
                             <p className="py-2 text-xl font-extrabold learn-more-link font-mondwest text-pixel-black"
-                               onClick={() => openModal("development")}>
+                               onClick={() => openModal("partnership")}>
                                 Learn More <span className="arrow">&#8594;</span>
                             </p>
                         </Link>
