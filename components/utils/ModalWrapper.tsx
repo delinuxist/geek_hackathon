@@ -32,7 +32,7 @@ const ModalWrapper = (Props: ModalWrapperProps) => {
                                 leaveTo='opacity-0 scale-95'
                             >
                                 <Dialog.Panel
-                                    className={`relative w-full max-w-[50vw] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5 ${Props.containerStyles ? Props.containerStyles : "max-w-lg"}`}>
+                                    className={`relative w-full max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5 ${Props.containerStyles ? Props.containerStyles : "max-w-lg"}`}>
                                     <button
                                         type='button'
                                         className='absolute z-10 p-2 duration-200 ease-in-out rounded-full shadow-xl top-2 right-2 w-fit bg-pixel-black text-disruption hover:scale-105'
