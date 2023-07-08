@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import { MouseEventHandler } from "react";
-import { JsxElement } from 'typescript';
+import { JsxElement } from "typescript";
 
 export interface CustomButtonProps {
   title: string;
@@ -44,4 +44,11 @@ export interface DisplayInfoProps {
   isOpen: boolean;
   closeModal: () => void;
   info: InfoProps | undefined;
+}
+
+export interface ModalWrapperProps {
+  isOpen: boolean;
+  closeModal: () => void;
+  children: React.ReactNode;
+  containerStyles?: string;
 }
