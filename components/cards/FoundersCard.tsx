@@ -25,7 +25,9 @@ const FoundersCard = ({ Props, index }: { Props: FoundersCardProps, index: numbe
   return (
     <>
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className=" md:w-[50%] w-full">
-        <Tilt className="w-full p-4 border shadow-lg bg-disruption group rounded-2xl border-t-welcoming border-r-inspiration border-l-white border-b-disruption">
+        <Tilt
+          transitionSpeed={8000}
+          className="w-full p-4 border shadow-lg bg-disruption group rounded-2xl border-t-welcoming border-r-inspiration border-l-white border-b-disruption">
           {/* <div className="absolute top-0 -z-[5] -right-3 w-[101%] h-[103%] rounded-[2rem] bg-pixel-black rounded-br-3xl" /> */}
           <div className="w-full">
             <div className='relative w-full h-[400px]'>
@@ -47,7 +49,7 @@ const FoundersCard = ({ Props, index }: { Props: FoundersCardProps, index: numbe
               <p className="font-bold">{Props.info.name}</p>
               <h1 className="text-3xl">{Props.info.position}</h1>
               <p>{truncateString(Props.info.content, 50)}</p>
-              <CustomButton containerStyles={'bg-inspiration rounded-md mt-2 ease-in-out  py-2 hover:scale-105 hover:text-white text-software-grey font-bold'} title="Read More" handleClick={() => openModal(Props.info)} />
+              <CustomButton containerStyles={'bg-inspiration mt-2 ease-in-out  py-2 hover:scale-105 hover:text-white text-software-grey font-bold'} title="Read More" handleClick={() => openModal(Props.info)} />
             </div>
           </div>
         </Tilt>
