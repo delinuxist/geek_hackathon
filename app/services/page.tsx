@@ -18,7 +18,7 @@ export default function Service() {
     const openModal = (content: string) => {
 
         setScrollPosition(window.scrollY);
-        
+
         if (content === "partnership") {
             setModalContent(() => <Partnership />);
         } else if (content === "projectManagement") {
@@ -42,17 +42,7 @@ export default function Service() {
         <AnimatePresenceWrapper>
             <section className="h-full bg-white">
                 <Hero />
-
-                <ServicesSection
-                    openModal={openModal}
-                    closeModal={closeModal}
-                />
-
-                <Modal
-                    isVisible={showModal}
-                    onClose={closeModal}
-                    content={modalContent}
-                />
+                <ServicesSection />
             </section>
         </AnimatePresenceWrapper>
     );
