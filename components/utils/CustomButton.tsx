@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { CustomButtonProps } from '../../core/shared/interface'
+import { CustomButtonProps } from '@/core/shared/interface'
 
 const CustomButton = (Props: CustomButtonProps) => {
   return (

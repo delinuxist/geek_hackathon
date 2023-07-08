@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { ComponentType } from 'react';
-import { staggerContainer } from '../../core/utils/motion';
+import { staggerContainer } from '@/core/utils/motion';
 
 
 

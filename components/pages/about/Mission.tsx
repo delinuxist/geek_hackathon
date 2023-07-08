@@ -1,9 +1,9 @@
 'use client'
 import { motion } from 'framer-motion';
-import { textVariant } from '../../../core/utils/motion';
+import { textVariant } from '@/core/utils/motion';
 import withAnimate from '../../hoc/WithAnimate';
 import { ImageSlider } from '../../utils';
-import { about_slider } from '../../../core/shared/constants';
+import { about_slider } from '@/core/shared/constants';
 
 const Mission = () => {
   return (

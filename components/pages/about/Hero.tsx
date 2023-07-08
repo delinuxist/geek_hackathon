@@ -8,7 +8,7 @@ import {
   ThumbsUpWelcoming,
 } from "@/public/assets/img";
 import { ProgrammingEffect } from "@/public/assets/json";
-import { textVariant } from '../../../core/utils/motion';
+import { textVariant } from '@/core/utils/motion';
 import { motion } from 'framer-motion';
 import withAnimate from '../../hoc/WithAnimate';
 

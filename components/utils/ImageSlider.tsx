@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import { SliderImageProps } from '../../core/shared/interface';
+import { SliderImageProps } from '@/core/shared/interface';
 
 const ImageSlider = (Props: SliderImageProps) => {
 
