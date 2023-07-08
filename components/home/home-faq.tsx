@@ -1,4 +1,4 @@
-import { faqs } from "../../core/shared/constants";
+import { faqs } from "@/core/shared/constants";
 import FaqAccordion from "./faq-accordion";
 
 export default function HomeFaq() {

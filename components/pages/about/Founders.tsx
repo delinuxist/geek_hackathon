@@ -1,8 +1,8 @@
 "use client"
 import { motion } from 'framer-motion'
 import withAnimate from '../../hoc/WithAnimate';
-import { textVariant } from '../../../core/utils/motion';
-import { founders } from '../../../core/shared/constants';
+import { textVariant } from '@/core/utils/motion';
+import { founders } from '@/core/shared/constants';
 import { FoundersCard } from '../../cards';
 
 const Founders = () => {

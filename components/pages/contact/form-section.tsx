@@ -3,7 +3,6 @@ import InputField from "@/components/forms/input-field";
 import InputLabel from "@/components/forms/input-label";
 import TextArea from "@/components/forms/text-area";
 import CustomButton from "@/components/utils/CustomButton";
-import { motion } from "framer-motion";
 
 export default function FormSection() {
   const styles = {

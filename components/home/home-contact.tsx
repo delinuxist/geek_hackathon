@@ -44,7 +44,7 @@ export default function HomeContact() {
               containerStyles="bg-insightful rounded-full text-pixel-black hover:bg-inspiration w-full"
             ></CustomButton>
             <Link
-              href="/contact"
+              href={"/contact"}
               className="text-white text-center mt-3 inline-block"
             >
               Get in touch with us &#10230;

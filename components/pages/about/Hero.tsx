@@ -8,13 +8,13 @@ import {
   ThumbsUpWelcoming,
 } from "@/public/assets/img";
 import { ProgrammingEffect } from "@/public/assets/json";
-import { textVariant } from '../../../core/utils/motion';
+import { textVariant } from '@/core/utils/motion';
 import { motion } from 'framer-motion';
 import withAnimate from '../../hoc/WithAnimate';
 
 const Hero = () => {
   return (
-    <div className='padding-x w-[100%] min-h-screen bg-white flex flex-col md:grid grid-cols-2'>
+    <div className='padding-x w-[100%] min-h-[calc(100vh-3.5rem)] bg-white flex flex-col md:grid grid-cols-2'>
       <motion.div variants={textVariant(0.1)} className='w-[100%] flex justify-center items-center relative'>
         <Lottie onComplete={() => {}} animationData={ProgrammingEffect} />
         <div className='top-0 left-0 flex-col hidden xl:flex xl:absolute'>

@@ -2,6 +2,7 @@ import { Footer, Navbar } from "../components/layout";
 import "../styles/globals.css";
 import localFont from "next/font/local";
 import { Work_Sans } from "next/font/google";
+import React from "react";
 
 const neuebit = localFont({
   src: [

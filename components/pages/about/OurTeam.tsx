@@ -8,7 +8,7 @@ import Image from 'next/image'
 import { CustomButton } from '../../utils'
 import { DisplayInfo } from '../../utils'
 import { InfoProps } from '@/core/shared/interface'
-import { truncateString } from '../../../core/utils/basicFunc'
+import { truncateString } from '@/core/utils/basicFunc'
 
 const OurTeam = () => {
   const [isOpen, setIsOpen] = useState(false);

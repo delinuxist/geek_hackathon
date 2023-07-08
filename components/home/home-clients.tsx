@@ -11,7 +11,7 @@ import Image from "next/image";
 import { Swiper } from "swiper";
 
 // Import Swiper styles
-import { clientReview } from "../../core/shared/constants";
+import { clientReview } from "@/core/shared/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleLeft,

@@ -1,5 +1,5 @@
 import { VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { HistoryCardProps } from '../../core/shared/interface'
+import { HistoryCardProps } from '@/core/shared/interface'
 import Image from 'next/image'
 import { SmileIcon } from '../../public/assets/img'
 
