@@ -1,5 +1,5 @@
-import {envBlog, iotExplained, symbolicValues,} from "@/public/assets/img";
-import {FaGithub, FaLinkedin, FaMedium, FaTwitter, FaYoutube,} from "react-icons/fa";
+import { envBlog, iotExplained, symbolicValues, } from "@/public/assets/img";
+import { FaGithub, FaLinkedin, FaMedium, FaTwitter, FaYoutube, } from "react-icons/fa";
 
 export const navLinks = [
     {
@@ -24,17 +24,17 @@ export const footerLinks = [
     {
         title: "About",
         links: [
-            {title: "About Us", url: "/about", icon: ""},
-            {title: "Why Ghana?", url: "/", icon: ""},
-            {title: "Our People", url: "/", icon: ""},
-            {title: "Featured Content", url: "/", icon: ""},
+            { title: "About Us", url: "/about", icon: "" },
+            { title: "Why Ghana?", url: "/", icon: "" },
+            { title: "Our People", url: "/", icon: "" },
+            { title: "Featured Content", url: "/", icon: "" },
         ],
     },
     {
         title: "Company",
         links: [
-            {title: "Events", url: "/", icon: ""},
-            {title: "Blog", url: "/", icon: ""},
+            { title: "Events", url: "/", icon: "" },
+            { title: "Blog", url: "/", icon: "" },
         ],
     },
     {
@@ -43,23 +43,23 @@ export const footerLinks = [
             {
                 title: "LinkedIn",
                 url: "https://linkedin.com/company/turntabl",
-                icon: <FaLinkedin/>,
+                icon: <FaLinkedin />,
             },
             {
                 title: "Twitter",
                 url: "https://twitter.com/turntablio",
-                icon: <FaTwitter/>,
+                icon: <FaTwitter />,
             },
             {
                 title: "Youtube",
                 url: "https://youtube.com/@turntablgh",
-                icon: <FaYoutube/>,
+                icon: <FaYoutube />,
             },
-            {title: "Github", url: "/", icon: <FaGithub/>},
+            { title: "Github", url: "/", icon: <FaGithub /> },
             {
                 title: "Medium",
                 url: "https://medium.com/@turntabl.io",
-                icon: <FaMedium/>,
+                icon: <FaMedium />,
             },
         ],
     },
@@ -195,7 +195,7 @@ export const founders = [
             position: "CEO",
             links: [
                 {
-                    icon: <FaTwitter/>,
+                    icon: <FaTwitter />,
                     url: "https://twitter.com/sammoorhouse?s=20",
                 },
             ],
@@ -209,7 +209,7 @@ export const founders = [
             position: "CTO",
             links: [
                 {
-                    icon: <FaTwitter/>,
+                    icon: <FaTwitter />,
                     url: "",
                 },
             ],
@@ -246,15 +246,15 @@ export const ourPeoples = [
             content: "",
             links: [
                 {
-                    icon: <FaLinkedin/>,
+                    icon: <FaLinkedin />,
                     url: "https://www.linkedin.com/in/giselle-partington-osei-aa895ba/",
                 },
             ],
         },
         image: {
             url: "/assets/img/Giselle.jpeg",
-            width: 330,
-            height: 350,
+            width: 800,
+            height: 800,
         },
     },
     {
@@ -264,15 +264,15 @@ export const ourPeoples = [
             content: "",
             links: [
                 {
-                    icon: <FaLinkedin/>,
+                    icon: <FaLinkedin />,
                     url: "https://linkedin.com/in/riyanat/",
                 },
             ],
         },
         image: {
             url: "/assets/img/Ri.jpeg",
-            width: 2800,
-            height: 1300,
+            width: 800,
+            height: 800,
         },
     },
     {
@@ -283,15 +283,15 @@ export const ourPeoples = [
             content: "",
             links: [
                 {
-                    icon: <FaLinkedin/>,
+                    icon: <FaLinkedin />,
                     url: "https://www.linkedin.com/in/stoirm/",
                 },
             ],
         },
         image: {
             url: "/assets/img/Stoirm.jpeg",
-            width: 1999,
-            height: 1333,
+            width: 800,
+            height: 800,
         },
     },
     {
@@ -302,15 +302,15 @@ export const ourPeoples = [
             content: "Chima has over 5 years of experience in research and production as a software engineer and data specialist. With a postgraduate degree in Information Systems from the University of Ibadan, Chima is also keen to acquire skills in new technologies, provide value, and has an unending enthusiasm for solving problems. Chima is fascinated by mentoring, teaching and career development, which aligns with the core values of turntabl.",
             links: [
                 {
-                    icon: <FaLinkedin/>,
+                    icon: <FaLinkedin />,
                     url: "twitter.com/chima",
                 },
             ],
         },
         image: {
             url: "/assets/img/Chimaobim Ibebunjoh .png",
-            width: 330,
-            height: 350,
+            width: 1999,
+            height: 1333,
         },
     },
     {
@@ -321,15 +321,15 @@ export const ourPeoples = [
             content: "",
             links: [
                 {
-                    icon: <FaLinkedin/>,
+                    icon: <FaLinkedin />,
                     url: "https://www.linkedin.com/in/aisha-moradeyo-animashaun/",
                 },
             ],
         },
         image: {
             url: "/assets/img/Aisha.jpeg",
-            width: 330,
-            height: 350,
+            width: 1999,
+            height: 1333,
         },
     },
     {
@@ -340,15 +340,15 @@ export const ourPeoples = [
             content: "",
             links: [
                 {
-                    icon: <FaLinkedin/>,
+                    icon: <FaLinkedin />,
                     url: "https://www.linkedin.com/in/kicki-frisch-9b5676/",
                 },
             ],
         },
         image: {
             url: "/assets/img/Kicki.jpeg",
-            width: 350,
-            height: 350,
+            width: 800,
+            height: 800,
         },
     },
     {
@@ -359,15 +359,15 @@ export const ourPeoples = [
             content: "",
             links: [
                 {
-                    icon: <FaLinkedin/>,
+                    icon: <FaLinkedin />,
                     url: "https://www.linkedin.com/in/calvin-w-thomas/",
                 },
             ],
         },
         image: {
             url: "/assets/img/Calvin.jpeg",
-            width: 1999,
-            height: 1333,
+            width: 560,
+            height: 560,
         },
     },
     {
@@ -378,7 +378,7 @@ export const ourPeoples = [
             content: "",
             links: [
                 {
-                    icon: <FaLinkedin/>,
+                    icon: <FaLinkedin />,
                     url: "https://www.linkedin.com/in/knocksto/",
                 },
             ],
