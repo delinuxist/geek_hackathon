@@ -7,7 +7,7 @@ import { about_slider } from '@/core/shared/constants';
 
 const Mission = () => {
   return (
-    <div className="w-[100%] flex flex-col md:grid md:grid-cols-2 padding-x padding-y justify-between items-center gap-10 mb-4">
+    <div className="max-w-[100rem] mx-auto flex flex-col md:grid md:grid-cols-2 padding-x padding-y gap-10 mb-4">
       <div >
         <motion.div variants={textVariant(0.1)}>
           <p className="text-2xl">Company&apos;s Mission</p>

@@ -11,7 +11,7 @@
 @layer base {
   /* modify a base style e.g [h1,p,label] */
   h1 {
-    @apply text-[60px] font-bold font-mondwest;
+    @apply text-[30px] md:text-[40] lg:text-[50px] font-bold font-mondwest;
   }
   h2 {
     @apply text-[54px] font-neuebit font-bold;
