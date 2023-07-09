@@ -9,6 +9,7 @@ import { TeamsCard } from '../../cards'
 const OurTeam = () => {
 
   return (
+
     <div className="max-w-[100rem] mx-auto text-white bg-gradient-to-tr from-pixel-black to-disruption padding-x padding-y hover:bg-gradient-to-br">
       <motion.div
         initial="hidden"

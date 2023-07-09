@@ -8,7 +8,7 @@ import { useRef } from "react";
 export default function AnimatedContactFormSection() {
   const lottieRef = useRef<LottieRefCurrentProps>(null)
   return (
-    <div className="padding-x flex flex-col items-center min-h-[calc(100vh-3.5rem)]">
+    <div className="padding-x flex flex-col items-center justify-center min-h-[calc(100vh-3.5rem)]">
       <div className="max-w-7xl">
              <div className="content-center justify-center  py-5">
         <div>

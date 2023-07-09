@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HomeWelcome() {
   return (
-    <section className="home-welcome bg-pixel-black">
+    <section className="min-h-[calc(50vh-3.5rem)] home-welcome bg-pixel-black items-center justify-center flex flex-col">
       <div className="container mx-auto padding-x py-20 flex-center max-[1016px]:flex-col flex-row gap-x-5">
         <div className="home-welcome-text text-white flex-1 self-start max-[1016px]:self-center max-[1016px]:mb-12">
           <div className="w-[410px] max-[600px]:w-[350px] mx-auto">
