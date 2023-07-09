@@ -60,3 +60,12 @@ export interface TeamsCardProps {
     height: number;
   };
 }
+
+export interface inputProps {
+  placeholder?: string;
+  width?: string;
+  scheme?: string;
+  type?: string;
+  name?: string;
+  required?: boolean
+};
