@@ -75,10 +75,10 @@ const Footer = () => {
         <div className='flex flex-wrap items-center justify-between py-10 mt-10 border-t border-gray-100 padding-x'>
           <p>&copy;2023 Turntabl. All Rights Reserved</p>
           <div className='flex justify-center flex-1 gap-10 sm:justify-end max-sm:mt-4'>
-            <Link href={"/"} className='hover:text-inspiration'>
+            <Link href={"/privacy"} className='hover:text-inspiration'>
               Privacy Policy
             </Link>
-            <Link href={"/"} className='hover:text-inspiration'>
+            <Link href={"/terms"} className='hover:text-inspiration'>
               Terms of Use
             </Link>
           </div>
