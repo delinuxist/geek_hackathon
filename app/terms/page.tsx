@@ -1,7 +1,33 @@
 import React from "react";
+import AnimatePresenceWrapper from "@/components/utils/AnimatePresenceWrapper";
+import {Metadata} from "next";
+
+
+export const metadata: Metadata = {
+    applicationName: "Turntabl Website",
+    title: "Turntabl Terms of Use",
+    description:
+        "We Are Turntabl, Providing Innovative Software Engineering Solutions To Businesses All Over the World",
+    publisher: "Turntabl",
+    authors: [{ name: "Turntabl" }],
+    keywords: [
+        "Turntabl",
+        "Tech",
+        "Solution",
+        "Technology",
+        "Ghana",
+        "Finance",
+        "Software",
+        "Digital",
+        "Africa",
+        "About",
+    ],
+};
+
 
 export default function Privacy() {
     return (
+        <AnimatePresenceWrapper>
         <div className="container mx-auto px-12 py-8 text-lg">
             <h2 className="text-5xl font-bold mb-4">Thank you for using turntabl!</h2>
             <h4 className="text-xl mb-8">Version Date. October, 2022</h4>
@@ -504,5 +530,6 @@ export default function Privacy() {
                 Account.
             </p>
         </div>
+        </AnimatePresenceWrapper>
     );
 }

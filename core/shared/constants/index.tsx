@@ -224,14 +224,14 @@ export const about_slider = [
         url: '/assets/img/tt1.jpeg',
     },
     {
-        url: '/assets/img/tt2.jpeg',
+        url: '/assets/img/tt12.jpeg',
     },
     {
-        url: '/assets/img/tt8.jpeg',
+        url: '/assets/img/IMG_9947.jpg',
     },
 
     {
-        url: '/assets/img/tt4.jpeg',
+        url: '/assets/img/fair.jpg',
     },
     {
         url: '/assets/img/IMG_9383.jpg',

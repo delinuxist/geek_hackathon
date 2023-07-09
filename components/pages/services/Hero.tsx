@@ -6,7 +6,7 @@ import { ServiceEffect } from "@/public/assets/json";
 
 const Hero = () => {
     return (
-        <div className="min-h-[calc(100vh-3.5rem)] flex flex-col justify-center items-center p-12 text-4xl font-bold text-center bg-black bg-cover">
+        <div className="min-h-[calc(97vh-3.5rem)] flex flex-col justify-center items-center p-12 text-4xl font-bold text-center bg-black bg-cover">
             <div className="grid items-center grid-cols-1 gap-4 py-5 md:grid-cols-2">
                 <div>
                     <h2 className="px-5 font-bold text-white font-neuebit text-7xl text-start" style={{ lineHeight: "0.7" }}>

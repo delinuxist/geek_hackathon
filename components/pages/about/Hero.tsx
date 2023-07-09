@@ -14,7 +14,7 @@ import withAnimate from '../../hoc/WithAnimate';
 
 const Hero = () => {
   return (
-    <div className='padding-x w-[100%] min-h-[calc(100vh-3.5rem)] bg-white flex justify-center items-center '>
+    <div className='padding-x w-[100%] min-h-[calc(95vh-3.5rem)] bg-white flex justify-center items-center '>
       <div className="max-w-[100rem] mx-auto justify-center items-center flex flex-col md:grid grid-cols-2">
         <motion.div variants={textVariant(0.1)} className='w-[100%] flex justify-center items-center relative'>
           <Lottie onComplete={() => {}} animationData={ProgrammingEffect} />
