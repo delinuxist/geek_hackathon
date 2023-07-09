@@ -1,4 +1,6 @@
 import React from "react";
+import AnimatePresenceWrapper from "../../components/utils/AnimatePresenceWrapper";
+import { Metadata } from "next";
 import {
   Hero,
   History,
@@ -6,8 +8,6 @@ import {
   Founders,
   OurTeam,
 } from "../../components/pages/about";
-import AnimatePresenceWrapper from "../../components/utils/AnimatePresenceWrapper";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   applicationName: "Turntabl Website",
