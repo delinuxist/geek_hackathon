@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <AnimatePresenceWrapper>
-      <div className="relative w-full mt-10 bg-software-grey">
+      <div className='relative w-full bg-software-grey'>
         <Hero />
         <Mission />
         <History />
