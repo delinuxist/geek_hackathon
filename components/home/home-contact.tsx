@@ -80,7 +80,12 @@ export default function HomeContact() {
           >
             <div className="form-group">
               <InputLabel scheme="dark" label="Name: " />
-              <InputField scheme="dark" placeholder="Your name" name="name" />
+              <InputField
+                scheme="dark"
+                placeholder="Your name"
+                name="name"
+                required={true}
+              />
             </div>
             <div className="form-group">
               <InputLabel scheme="dark" label="Email: " />
@@ -88,11 +93,18 @@ export default function HomeContact() {
                 scheme="dark"
                 placeholder="user@example.com"
                 name="email"
+                type="email"
+                required={true}
               />
             </div>
             <div className="form-group">
               <InputLabel scheme="dark" label="Message: " />
-              <InputField scheme="dark" placeholder="Message" name="message" />
+              <InputField
+                scheme="dark"
+                placeholder="Message"
+                name="message"
+                required={true}
+              />
             </div>
             <CustomButton
               title="Contact Us"

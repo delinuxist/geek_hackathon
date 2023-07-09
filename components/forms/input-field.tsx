@@ -13,6 +13,7 @@ export default function InputField(props: inputProps) {
         type={props.type ? props.type : "text"}
         name={props.name}
         placeholder={props.placeholder}
+        required={props.required}
       />
     </>
   );

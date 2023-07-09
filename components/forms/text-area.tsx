@@ -11,6 +11,7 @@ export default function TextField(props: inputProps) {
           : styles.ttInputFieldDefault
       } h-40`}
       placeholder={props.placeholder}
+      required
     />
   );
 }

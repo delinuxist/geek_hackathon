@@ -58,4 +58,5 @@ export interface inputProps {
   scheme?: string;
   type?: string;
   name?: string;
+  required?: boolean
 };

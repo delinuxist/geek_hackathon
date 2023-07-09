@@ -23,6 +23,7 @@ export default function FormSection() {
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
+
     if (sendMail(form.current)) {
       setContent({
         title: "Form Successfully Sent",
@@ -68,7 +69,11 @@ export default function FormSection() {
           <div className="flex flex-row justify-center items-center flex-wrap">
             <div className={styles.ttContactFormRowItem}>
               <InputLabel label="Name: " />
-              <InputField placeholder="Enter your Name" name="name" />
+              <InputField
+                placeholder="Enter your Name"
+                name="name"
+                required={true}
+              />
             </div>
             <div className={styles.ttContactFormRowItem}>
               <InputLabel label="Email: " />
@@ -76,6 +81,7 @@ export default function FormSection() {
                 placeholder="Enter your Email"
                 type="email"
                 name="email"
+                required={true}
               />
             </div>
 
@@ -97,6 +103,7 @@ export default function FormSection() {
               <TextArea
                 placeholder="Tell us a little about you, your organisation or your project"
                 name="message"
+                required={true}
               />
             </div>
           </div>
@@ -119,9 +126,9 @@ export default function FormSection() {
           <div className="w-full mt-4 border-[0.5px] border-software-grey" />
           <div className="mt-5 " />
           <p>{content?.body}</p>
-          <div>
+          <div className="w-full flex justify-center">
             {content?.success === true && (
-              <Lottie animationData={animationData} />
+              <Lottie animationData={animationData} className="w-1/2" />
             )}
           </div>
           <div className="mt-4" />
