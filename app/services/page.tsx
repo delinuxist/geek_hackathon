@@ -1,12 +1,10 @@
-"use client";
-
 import React from "react";
 import Hero from "@/components/pages/services/Hero";
 import ServicesSection from "@/components/pages/services/ServicesSection";
 import AnimatePresenceWrapper from "@/components/utils/AnimatePresenceWrapper";
 import { Metadata } from "next";
 
-export const metadat: Metadata = {
+export const metadata: Metadata = {
   applicationName: "Turntabl Website",
   title: "Turntabl Service Page",
   description:
