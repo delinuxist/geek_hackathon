@@ -303,7 +303,7 @@ export const ourPeoples = [
             links: [
                 {
                     icon: <FaLinkedin />,
-                    url: "twitter.com/chima",
+                    url: "https://linkedin.com",
                 },
             ],
         },
@@ -385,6 +385,25 @@ export const ourPeoples = [
         },
         image: {
             url: "/assets/img/Enock Boadi-Ansah .png",
+            width: 1999,
+            height: 1333,
+        },
+    },
+    {
+        info: {
+            name: "Ibrahim",
+            position: "Head of Operations",
+
+            content: "",
+            links: [
+                {
+                    icon: <FaLinkedin />,
+                    url: "https://www.linkedin.com/in/inusaibrahim/",
+                },
+            ],
+        },
+        image: {
+            url: "/assets/img/team-frame-1.png",
             width: 1999,
             height: 1333,
         },

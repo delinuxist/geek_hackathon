@@ -37,7 +37,7 @@ const OurTeam = () => {
             {
               ourPeoples.map((p, index) => (
                 <motion.div
-                  variants={fadeIn("up", "spring", index * 0.5, 0.75)} key={p.info.name}
+                  variants={fadeIn("up", "spring", index * 0.3, 0.75)} key={p.info.name}
                   className="rounded-lg break-inside-avoid"
                 >
                   <div className={`lg:h-[${p.image.height}] w-[${p.image.width}] border-2 rounded-lg duration-200 hover:scale-105 shadow-2xl relative group ease-in-out`}>
