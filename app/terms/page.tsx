@@ -45,7 +45,7 @@ export default function Privacy() {
             If we make a change to or cancel an account, we may attempt to notify you by contacting the e-mail
             and/or
             billing address/phone number provided at the time your account was created.
-            <br/>
+            <br/><br/>
             <h4><strong>1.2 Qualifications</strong></h4>
             You represent and warrant that you meet the following qualifications: (1) if you are an individual
             person,
@@ -59,19 +59,19 @@ export default function Privacy() {
             embargo, or that has been designated by the U.S. government as a “terrorist-supporting”
             country, and are not
             listed on any U.S. government list of prohibited or restricted persons.
-            <br/>
+            <br/><br/>
             <h4><strong>1.3 Registration</strong></h4>
             You agree to provide true, accurate, current and complete information about yourself and your organization,
             as applicable, as requested in the account registration form and elsewhere, and you agree to update such
             information if it changes.
-            <br/>
+            <br/><br/>
             <h4><strong>1.4 Account Access</strong></h4>
             You may access and use the Service and access your turntabl account (the “Account”) in accordance with these
             Terms. We may, in our discretion, permit you to authorize additional users to access and use your Account
             for your benefit. You, and any such additional users, are referred to as “Authorized Users”. You will be
             responsible for each Authorized User’s use of your Account, and each Authorized User’s compliance with this
             Agreement.
-            <br/>
+            <br/><br/>
             <h4><strong>1.5 Usernames and Passwords</strong></h4>
             You will require that all Authorized Users keep user ID and password information strictly confidential and
             not share such information with any unauthorized person. turntabl will not have any liability under this
@@ -81,7 +81,7 @@ export default function Privacy() {
             notify us immediately of any unauthorized use of your Account or any other breach of security. Usernames are
             unique and can only be used once. If your Account is terminated, the username will no longer be available
             for use on any future accounts and cannot be reclaimed.
-            <br/>
+            <br/><br/>
             <h4><strong>1.6 Communication with You</strong></h4>
             We reserve the right to send messages to you to (a) inform you of changes or additions to the Site, the
             Products, this Agreement or the Fee Schedule (defined below), (b) to inform you of violations of this
@@ -117,7 +117,7 @@ export default function Privacy() {
             permanently and with or without notice, and you acknowledge that we are not obligated to support or update
             the Service in any manner. If we discontinue any function of the Service in its entirety that you are using,
             we will provide you with advance notice and an opportunity to cancel your Account.
-            <br/>
+            <br/><br/>
             <h4><strong>2.2 Prohibition on Spam; Permission Practices</strong></h4>
             <p>
                 You agree that you will not use the Services to send unsolicited email messages (sometimes
@@ -184,6 +184,7 @@ export default function Privacy() {
                     whose behalf you may be acting.
                 </p>
             </ol>
+            <br/>
             <h4><strong>2.3 Prohibited Uses and Content</strong></h4>
             In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the
             site or its content:
@@ -221,6 +222,7 @@ export default function Privacy() {
                     website for violating any of the prohibited uses.
                 </li>
             </ol>
+            <br/>
             <h4><strong>2.4 Limitations</strong></h4>
             <p>
                 You understand that not all messages or campaigns sent through use of the Services will be received by
@@ -232,6 +234,7 @@ export default function Privacy() {
                 exceeding maximum character limitations may be truncated, abbreviated, reduced or otherwise abruptly cut
                 short.
             </p>
+            <br/>
             <h4><strong>2.5 Monitoring and Removal</strong></h4>
             <p>
                 Although we have no obligation to monitor the content provided by you or your use of the Services, we
@@ -280,6 +283,7 @@ export default function Privacy() {
                 granted herein. All rights of turntabl or its licensors that are not expressly granted in this Agreement
                 are reserved to turntabl and its licensors.
             </p>
+            <br/>
             <h4><strong>6.2 No Rights in Service or Software</strong></h4>
             <p>
                 We own all proprietary rights in the Service, including, but not limited to, patents, trademarks,
@@ -295,6 +299,7 @@ export default function Privacy() {
                 Software; or copy, distribute, pledge, assign, or otherwise transfer or encumber rights to the Services
                 or any Software.
             </p>
+            <br/>
             <h4><strong>6.3 Your Information and Content</strong></h4>
             <p className={'mx-4'}><strong>a) Your Information</strong>
                 <br/>
@@ -338,20 +343,32 @@ export default function Privacy() {
             <p>
                 The Site and the Services shall only be used for lawful purposes and you shall use the Site and Services
                 only in compliance with this Agreement and all other applicable U.S., state, local and international
-                laws in your jurisdiction, including, as applicable: the CAN-SPAM Act; Canada&apos;s Anti-Spam
-                Legislation; California Consumer Privacy Act (&quot;CCPA&quot;); the European Union&apos;s General Data
-                Protection Regulation 2016/679 (&quot;GDPR&quot;); any policies and laws related to unsolicited emails,
-                spamming, privacy, obscenity, or defamation, copyright and trademark infringement and child protective
-                email address registry laws; laws relating to advertising, sales or promotional efforts or practices,
-                redemption, refunds and provision of your Services or services; laws that govern false, unfair and
-                deceptive practices, coupons, gift cards/certificates, defective Services or services, unclaimed
-                property, alcohol or tobacco, health and safety, fire, and hygiene standards; laws that govern
-                lotteries, sweepstakes, contests and promotions; and laws that govern the collection of donations and
-                charitable giving. You further agree to refrain from unethical, false or misleading advertising,
+                laws in your jurisdiction, including, as applicable:<br/><br/>
+                <ol>
+                    <li>the CAN-SPAM Act; Canada&apos;s Anti-Spam Legislation;</li>
+
+                    <li>California Consumer Privacy Act (&quot;CCPA&quot;);</li>
+
+                    <li>the European Union&apos;s General Data Protection Regulation 2016/679 (&quot;GDPR&quot;);</li>
+
+                    <li>any policies and laws related to unsolicited emails, spamming, privacy, obscenity, or defamation, copyright and trademark infringement and child protective email address registry laws;</li>
+
+                    <li>laws relating to advertising, sales or promotional efforts or practices, redemption, refunds and provision of your Services or services;</li>
+
+                    <li>laws that govern false, unfair and deceptive practices, coupons, gift cards/certificates, defective Services or services, unclaimed property, alcohol or tobacco, health and safety, fire, and hygiene standards;</li>
+
+                    <li>laws that govern lotteries, sweepstakes, contests and promotions;</li>
+
+                    <li>and laws that govern the collection of donations and charitable giving.</li>
+                </ol>
+                <br/>
+                You further agree to refrain from unethical, false or misleading advertising,
                 promotions or sales efforts and practices in connection with your use of our Site or Services. You may
                 not use our Site or Services for any unlawful or discriminatory activities, including. acts prohibited
                 by the Federal Trade Commission Act, Fair Credit Reporting Act, Equal Credit Opportunity Act, or other
-                laws that apply to commerce. You are responsible for determining whether our Site or Services are
+                laws that apply to commerce.
+                <br/><br/>
+                You are responsible for determining whether our Site or Services are
                 suitable for you to use.in light of any regulations, such as the Health Insurance Portability and
                 Accountability Act (&quot;HIPAA&quot;), the Gramm-Leach-Bliley Act (&quot;GLBA&quot;), European data
                 privacy laws, or other laws. If you are subject to a particular regulation and you use our Site or
@@ -361,43 +378,21 @@ export default function Privacy() {
             <h2>8. Additional restriction on use of the services</h2>
             <br/>
             <p>
-                You agree to comply with the following in connection with your use of the Site and the Services: You may
-                not access or use the Site or the Services in a way that uses technology or other means to access,
-                index, re-render, frame, mirror, truncate, add to, inject, filter or link to the Site or the Services
-                that is not authorized by us (including by removing, disabling, bypassing, or circumventing any content
-                protection or access control mechanisms intended to prevent the unauthorized use, download, linking,
-                framing, reproduction access to, or distribution of the Site or the Services). You shall not use the
-                Site, the Services or any Software for timesharing or service-bureau purposes or otherwise for the
-                benefit of a third party (except as expressly permitted by our partner programs). You may not use any
-                deep-link, page-scrape, robot, crawl, index, spider, offline reader, click spam, macro programs,
-                internet agent, or other automatic device, program, algorithm or methodology which does the same things,
-                to use, access, copy, index, acquire information, generate impressions or clicks, input information,
-                store information, search, generate searches, or monitor any portion of the Site or the Services for any
-                unauthorized purpose. You may not use the Site or the Services in a way that, to be determined in our
-                sole discretion, damages, disables, overburdens, impairs, or gains unauthorized access to the Site or
-                the Services, including turntabl&apos;s servers, computer network, or user accounts. You may not use the
-                Site or the Services in a way that removes, modifies, disables, blocks, obscures or otherwise impairs
-                any advertising in connection with the Site or the Services.. You may not copy, display, distribute,
-                download, license, modify, publish, re-post, reproduce, reuse, sell, transmit, use to create a
-                derivative work, or otherwise use the content of the Site or the Services for public or commercial
-                purposes without our express written permission. You shall not interfere with or disrupt the Site or any
-                related turntabl websites or servers or networks connected to the Site or the Services. You shall not
-                restrict or inhibit any other user from enjoying and using the Site or the Services. You shall not use
-                the Site or the Services in violation of applicable law or third party rights.(including third party
-                terms of service), and shall not use the Site or the Services for hosting content (for example, images
-                and documents) that infringes on the intellectual property rights of others. You shall not repeatedly
-                upload and remove unique email addresses or otherwise try to manipulate data in an attempt to circumvent
-                our Fee Schedule or other billing procedure You shall not set up multiple accounts for any individual or
-                organization in order to send. substantially similar content unless you are part of a franchise. You may
-                only use our templates, any images we provide, or any other features or functionality of the Services
-                with the Services themselves (for example, you may not take.an image or template and use it on materials
-                you create without using the Services). This restriction also applies to customized templates prepared
-                by our professional services group. You shall not use documents and images hosted by us on servers
-                controlled by us for any purpose whatsoever other than in connection with the Services. If you own the
-                document or image, you can use it outside of the Services provided it is not hosted by us. You shall not
-                include any incentives (for example, coupons, discounts or awards) in any messages you send by means of
-                the Site or the Services that encourage a recipient to forward the message to another recipient, other
-                than as expressly encouraged and permitted within the applicable Product.
+                You agree to comply with the following in connection with your use of the Site and the Services: <br/>
+                You may not access or use the Site or the Services in a way that uses technology or other means to access, index, re-render, frame, mirror, truncate, add to, inject, filter or link to the Site or the Services that is not authorized by us (including by removing, disabling, bypassing, or circumventing any content protection or access control mechanisms intended to prevent the unauthorized use, download, linking, framing, reproduction access to, or distribution of the Site or the Services).<br/>
+                You shall not use the Site, the Services or any Software for timesharing or service-bureau purposes or otherwise for the benefit of a third party (except as expressly permitted by our partner programs). <br/>
+                You may not use any deep-link, page-scrape, robot, crawl, index, spider, offline reader, click spam, macro programs, internet agent, or other automatic device, program, algorithm or methodology which does the same things, to use, access, copy, index, acquire information, generate impressions or clicks, input information, store information, search, generate searches, or monitor any portion of the Site or the Services for any unauthorized purpose. <br/>
+                You may not use the Site or the Services in a way that, to be determined in our sole discretion, damages, disables, overburdens, impairs, or gains unauthorized access to the Site or the Services, including turntabl&apos;s servers, computer network, or user accounts. You may not use the Site or the Services in a way that removes, modifies, disables, blocks, obscures or otherwise impairs any advertising in connection with the Site or the Services.. <br/>
+                You may not copy, display, distribute, download, license, modify, publish, re-post, reproduce, reuse, sell, transmit, use to create a derivative work, or otherwise use the content of the Site or the Services for public or commercial purposes without our express written permission. <br/>
+                You shall not interfere with or disrupt the Site or any related turntabl websites or servers or networks connected to the Site or the Services. <br/>
+                You shall not restrict or inhibit any other user from enjoying and using the Site or the Services. <br/>
+                You shall not use the Site or the Services in violation of applicable law or third party rights.(including third party terms of service), and shall not use the Site or the Services for hosting content (for example, images and documents) that infringes on the intellectual property rights of others. <br/>
+                You shall not repeatedly upload and remove unique email addresses or otherwise try to manipulate data in an attempt to circumvent our Fee Schedule or other billing procedure <br/>
+                You shall not set up multiple accounts for any individual or organization in order to send. substantially similar content unless you are part of a franchise. <br/>
+                You may only use our templates, any images we provide, or any other features or functionality of the Services with the Services themselves (for example, you may not take.an image or template and use it on materials<br/>
+                you create without using the Services). This restriction also applies to customized templates prepared by our professional services group. <br/>
+                You shall not use documents and images hosted by us on servers controlled by us for any purpose whatsoever other than in connection with the Services. If you own the document or image, you can use it outside of the Services provided it is not hosted by us. <br/>
+                You shall not include any incentives (for example, coupons, discounts or awards) in any messages you send by means of the Site or the Services that encourage a recipient to forward the message to another recipient, other than as expressly encouraged and permitted within the applicable Product.<br/>
             </p>
             <br/>
             <h2>9. Contracts&apos; and customers&apos; privacy</h2>
@@ -412,6 +407,7 @@ export default function Privacy() {
                 include substantially similar disclosure (and update such disclosure from time to time) so that your
                 contacts and customers are aware of how their data is used by you and us.
             </p>
+            <br/>
             <h4><strong>9.2 Sensitive Information</strong></h4>
             <p>
                 You will not import or incorporate into any contact lists or other content you upload to our servers any
@@ -443,16 +439,20 @@ export default function Privacy() {
                 IN ADDITION, WE DO NOT ENDORSE AND ARE NOT RESPONSIBLE FOR (a) THE ACCURACY OR RELIABILITY OF ANY THIRD
                 PARTY CONTENT, OPINION, ADVICE OR STATEMENT MADE BY ANYONE OTHER THAN US, OR (b) ANY EVENT HOSTED,
                 DONATION SOLICITED, THE.RESULTS OF ANY SURVEY, OR ANY PRODUCT OR SERVICE PURCHASED OR OTHERWISE
-                OBTAINED.FROM ANY THIRD PARTY, INCLUDING OUR CUSTOMERS. NO CLAIM MAY BE ASSERTED BY YOU AGAINST US MORE
-                THAN 12 MONTHS AFTER THE DATE OF.THE CAUSE OF ACTION UNDERLYING SUCH CLAIM. YOUR SOLE AND EXCLUSIVE
-                REMEDY FOR ANY FAILURE OR NONPERFORMANCE OF THE SITE OR THE SERVICES SHALL BE FOR US TO USE COMMERCIALLY
-                REASONABLE EFFORTS TO ADJUST OR REPAIR THE SITE OR THE SERVICES. TO THE EXTENT APPLICABLE LAW PERMITS,
-                YOU RELEASE US FROM ANY CLAIMS OR LIABILITY RELATED TO (a) ANY CONTENT POSTED ON YOUR SITE OR IN ANY
-                MATERIALS YOU SEND USING.THE SITE OR THE SERVICES, (b) THE CONDUCT OF ANY OTHER CUSTOMERS OF OURS OR
-                THEIR.RESPECTIVE CONTACTS AND (c) ANY PROBLEMS THAT MAY ARISE FROM ANY REMOTE ACCESS TO YOUR COMPUTERS
-                OR OTHER SYSTEMS YOU PROVIDE TO OUR PERSONNEL OR AGENTS FOR THE PURPOSE OF TROUBLESHOOTING ISSUES. YOU
-                HEREBY WAIVE CALIFORNIA CIVIL CODE SECTION 1542 (IF YOU ARE A CALIFORNIA RESIDENT), AND ANY SIMILAR
-                PROVISION IN ANY OTHER.JURISDICTION (IF YOU ARE A RESIDENT OF SUCH JURISDICTION).
+                OBTAINED.FROM ANY THIRD PARTY, INCLUDING OUR CUSTOMERS.
+                <br/><br/>
+                NO CLAIM MAY BE ASSERTED BY YOU AGAINST US MORE THAN 12 MONTHS AFTER THE DATE OF.THE CAUSE OF ACTION
+                UNDERLYING SUCH CLAIM. YOUR SOLE AND EXCLUSIVE REMEDY FOR ANY FAILURE OR NONPERFORMANCE OF THE SITE OR
+                THE SERVICES SHALL BE FOR US TO USE COMMERCIALLY REASONABLE EFFORTS TO ADJUST OR REPAIR THE SITE OR THE
+                SERVICES.
+                <br/><br/>
+                TO THE EXTENT APPLICABLE LAW PERMITS, YOU RELEASE US FROM ANY CLAIMS OR LIABILITY RELATED TO (a) ANY
+                CONTENT POSTED ON YOUR SITE OR IN ANY MATERIALS YOU SEND USING.THE SITE OR THE SERVICES, (b) THE CONDUCT
+                OF ANY OTHER CUSTOMERS OF OURS OR THEIR.RESPECTIVE CONTACTS AND (c) ANY PROBLEMS THAT MAY ARISE FROM ANY
+                REMOTE ACCESS TO YOUR COMPUTERS OR OTHER SYSTEMS YOU PROVIDE TO OUR PERSONNEL OR AGENTS FOR THE PURPOSE
+                OF TROUBLESHOOTING ISSUES. YOU HEREBY WAIVE CALIFORNIA CIVIL CODE SECTION 1542 (IF YOU ARE A CALIFORNIA
+                RESIDENT), AND ANY SIMILAR PROVISION IN ANY OTHER.JURISDICTION (IF YOU ARE A RESIDENT OF SUCH
+                JURISDICTION).
             </p>
             <br/>
             <h2>11. Limitations of liability</h2>
