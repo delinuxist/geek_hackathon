@@ -28,7 +28,7 @@ export default function HomeHero() {
             handleClick={() => router.push("/about")}
             containerStyles="bg-insightful rounded-full hover:bg-inspiration w-40"
           ></CustomButton>
-          <Link href="/contact" className="ml-4 text-white">
+          <Link href={"/contact"} className="ml-4 text-white">
             Get in touch &#10230;
           </Link>
         </div>

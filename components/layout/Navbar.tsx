@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { ChangeEvent, useState } from "react";
 import Image from "next/image";
 import { logo } from "../../public/assets/img";
-import { navLinks } from "../../core/shared/constants";
+import { navLinks } from "@/core/shared/constants";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";

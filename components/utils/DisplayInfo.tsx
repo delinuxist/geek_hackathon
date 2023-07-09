@@ -1,8 +1,6 @@
 'use client'
-import React, { Fragment } from 'react'
-import { Dialog, Transition } from "@headlessui/react";
-import { AiOutlineClose } from 'react-icons/ai'
-import { DisplayInfoProps } from '../../core/shared/interface';
+import React from 'react'
+import { DisplayInfoProps } from '@/core/shared/interface';
 import Link from 'next/link';
 import { ModalWrapper } from './';
 
