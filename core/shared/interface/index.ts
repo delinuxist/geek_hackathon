@@ -52,3 +52,12 @@ export interface ModalWrapperProps {
   children: React.ReactNode;
   containerStyles?: string;
 }
+
+export interface TeamsCardProps {
+  info: InfoProps;
+  image: {
+    url: string;
+    width: number;
+    height: number;
+  };
+}
