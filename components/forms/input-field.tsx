@@ -1,20 +1,19 @@
-import styles from "../../styles/form.module.css"
+import { inputProps } from "@/core/shared/interface";
+import styles from "../../styles/form.module.css";
 
-type inputProps = {
-    placeholder?: string,
-    width?: string,
-    scheme?: string
-}
-
-export default function InputField(props:inputProps) {
-    
-    
+export default function InputField(props: inputProps) {
   return (
     <>
-        <input 
-        className={`${styles.ttInputField} ${props.scheme=="dark"? styles.ttInputFieldDark: styles.ttInputFieldDefault} h-10`}
+      <input
+        className={`${styles.ttInputField} ${
+          props.scheme == "dark"
+            ? styles.ttInputFieldDark
+            : styles.ttInputFieldDefault
+        } h-10`}
+        type={props.type ? props.type : "text"}
+        name={props.name}
         placeholder={props.placeholder}
-        />
+      />
     </>
-  )
+  );
 }

@@ -1,13 +1,16 @@
-import styles from "../../styles/form.module.css"
-type inputProps = {
-    placeholder?: string,
-    width?: string,
-    scheme?: string
-}
+import { inputProps } from "@/core/shared/interface";
+import styles from "../../styles/form.module.css";
 
 export default function TextField(props: inputProps) {
   return (
-    <textarea className={`${styles.ttInputField} ${props.scheme=="dark"? styles.ttInputFieldDark: styles.ttInputFieldDefault} h-40`}
-    placeholder={props.placeholder} />
-  )
+    <textarea
+      name={props.name}
+      className={`${styles.ttInputField} ${
+        props.scheme == "dark"
+          ? styles.ttInputFieldDark
+          : styles.ttInputFieldDefault
+      } h-40`}
+      placeholder={props.placeholder}
+    />
+  );
 }

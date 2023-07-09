@@ -51,3 +51,11 @@ export interface ModalWrapperProps {
   children: React.ReactNode;
   containerStyles?: string;
 }
+
+export interface inputProps {
+  placeholder?: string;
+  width?: string;
+  scheme?: string;
+  type?: string;
+  name?: string;
+};
