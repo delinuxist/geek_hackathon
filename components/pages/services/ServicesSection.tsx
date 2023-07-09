@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/core/utils/motion';
-import Link from "next/link";
 import { ModalWrapper } from '../../utils';
-import { ServiceSection, sectionContent } from '../../../core/shared/constants/services';
+import { ServiceSection, sectionContent } from '@/core/shared/constants/services';
 
 const ServicesSection = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +36,6 @@ const ServicesSection = () => {
                         </div>
                         <div>
                             <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Development</h3>
-                            <br />
                             <p className="text-pixel-black">
                                 At Turntabl, we specialize in delivering cutting-edge software solutions
                                 tailored to meet the unique needs and challenges of modern businesses. With our deep
@@ -63,7 +61,6 @@ const ServicesSection = () => {
                     <div className="grid items-center grid-cols-1 gap-4 md:grid-cols-2">
                         <div>
                             <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Project Management</h3>
-                            <br />
                             <p className="text-pixel-black">
                                 In today&apos;s dynamic business environment, effective project management plays a
                                 pivotal
@@ -103,7 +100,6 @@ const ServicesSection = () => {
                         </div>
                         <div>
                             <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Partnerships</h3>
-                            <br />
                             <p className="text-pixel-black">
                                 In today&apos;s fast-paced and interconnected business landscape, successful companies
                                 understand the power of collaboration and strategic partnerships. At Turntabl, we have
@@ -130,7 +126,6 @@ const ServicesSection = () => {
                     <div className="grid items-center grid-cols-1 gap-4 md:grid-cols-2">
                         <div>
                             <h3 className="text-5xl font-bold font-neuebit text-pixel-black">Software Consultancy</h3>
-                            <br />
                             <p className="text-pixel-black">
                                 At Turntabl, we understand that businesses face unique challenges and require
                                 tailored solutions to thrive in today&apos;s dynamic digital landscape. That&apos;s why

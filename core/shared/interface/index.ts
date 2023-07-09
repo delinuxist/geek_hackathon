@@ -1,6 +1,5 @@
 import { StaticImageData } from "next/image";
-import { MouseEventHandler } from "react";
-import { JsxElement } from "typescript";
+import React, { MouseEventHandler } from "react";
 
 export interface CustomButtonProps {
   title: string;

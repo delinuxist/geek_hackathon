@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { VerticalTimeline } from 'react-vertical-timeline-component'
 import { HistoryCard } from '../../cards'
 import { motion } from 'framer-motion';
-import { textVariant } from '../../../core/utils/motion';
-import { histories } from '../../../core/shared/constants';
+import { textVariant } from '@/core/utils/motion';
+import { histories } from '@/core/shared/constants';
 import withAnimate from '../../hoc/WithAnimate';
 import 'react-vertical-timeline-component/style.min.css'
 

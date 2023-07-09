@@ -1,4 +1,4 @@
-import { values } from "../../core/shared/constants/index";
+import { values } from "@/core/shared/constants";
 import ValueCard from "@/components/home/value-card";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ export default function HomeWelcome() {
             <p className="my-5 text-disruption">
               Let&apos;s disrupt the status quo together...
             </p>
-            <Link href="/contact" className="text-white">
+            <Link href={"/contact"} className="text-white">
               Get in touch with us &#10230;
             </Link>
           </div>
