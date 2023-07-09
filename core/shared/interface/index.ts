@@ -52,6 +52,15 @@ export interface ModalWrapperProps {
   containerStyles?: string;
 }
 
+export interface TeamsCardProps {
+  info: InfoProps;
+  image: {
+    url: string;
+    width: number;
+    height: number;
+  };
+}
+
 export interface inputProps {
   placeholder?: string;
   width?: string;
