@@ -12,13 +12,14 @@ import { withAnimate } from '../hoc'
 
 const Footer = () => {
   return (
-      <footer className='flex flex-col text-white bg-pixel-black'>
+    <footer className='flex flex-col text-white bg-pixel-black'>
+      <div className="max-w-[100rem] mx-auto">
         <div className='flex flex-wrap justify-between gap-5 py-10 max-md:flex-col'>
           {/* left content */}
           <div className='flex flex-col items-start justify-start gap-6'>
             <motion.div
-                variants={slideIn("left", "spring", 0, 2)}
-                className='w-[50%] h-10 padding-x bg-disruption flex items-center justify-center rounded-r-sm'
+              variants={slideIn("left", "spring", 0, 2)}
+              className='w-[50%] h-10 padding-x bg-disruption flex items-center justify-center rounded-r-sm'
             >
               <Image src={logo} alt='logo' width={118} height={18} className='object-contain' />
             </motion.div>
@@ -43,30 +44,30 @@ const Footer = () => {
           {/* right content */}
           <div className='flex flex-wrap flex-1 w-full gap-5 xsm:gap-20 padding-x md:justify-end max-md:mt-10'>
             {footerLinks.map((link) => (
-                <div key={link.title} className='flex flex-col gap-2 min-w-[170px]'>
-                  <h3 className='font-bold'>{link.title}</h3>
-                  {link.title === 'Socials' ? (
-                      <div className='flex gap-2'>
-                        {link.links.map((item) => (
-                            <a
-                                href={item.url}
-                                key={item.title}
-                                className='hover:text-inspiration'
-                                target='_blank'
-                                rel='noopener noreferrer'
-                            >
-                              {item.icon}
-                            </a>
-                        ))}
-                      </div>
-                  ) : (
-                      link.links.map((item) => (
-                          <Link href={item.url} key={item.title} className='hover:text-inspiration'>
-                            {item.title}
-                          </Link>
-                      ))
-                  )}
-                </div>
+              <div key={link.title} className='flex flex-col gap-2 min-w-[170px]'>
+                <h3 className='font-bold'>{link.title}</h3>
+                {link.title === 'Socials' ? (
+                  <div className='flex gap-2'>
+                    {link.links.map((item) => (
+                      <a
+                        href={item.url}
+                        key={item.title}
+                        className='hover:text-inspiration'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {item.icon}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  link.links.map((item) => (
+                    <Link href={item.url} key={item.title} className='hover:text-inspiration'>
+                      {item.title}
+                    </Link>
+                  ))
+                )}
+              </div>
             ))}
           </div>
         </div>
@@ -82,7 +83,8 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   )
 }
 
