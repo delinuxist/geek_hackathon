@@ -5,7 +5,6 @@ import {
   finosLogo,
   msLogo,
   secondStaxLogo,
-  userIconImg,
 } from "../../public/assets/img";
 import Image from "next/image";
 import { Swiper } from "swiper";
@@ -78,7 +77,7 @@ export default function HomeClients() {
                     </p>
                     <div className="py-5 flex items-center">
                       <Image
-                        src={userIconImg}
+                        src={review.image}
                         width={52}
                         height={52}
                         className="rounded-full bg-white p-2 inline-block "
