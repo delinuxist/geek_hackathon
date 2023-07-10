@@ -37,7 +37,7 @@
 @layer components {
   /* add your own extracted components */
   .padding-x {
-    @apply px-6 sm:px-16;
+    @apply px-6 sm:px-20;
   }
 
   .padding-y {

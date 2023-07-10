@@ -29,13 +29,13 @@ const Footer = () => {
                 <div className="flex flex-col items-center">
                   <div className="flex items-center">
                     <FaEnvelope className="mr-2 icon" />
-                    <a href="mailto:contact@turntabl.io" className="font-bold">Email us<br />contact@turntabl.io</a>
+                    <a href="mailto:info@turntabl.io" className="font-bold">Email us<br />info@turntabl.io</a>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <div className="flex items-center">
                     <FaPhone className="mr-2 icon fa-flip-horizontal" />
-                    <a href="tel:23348789987712" className="font-bold">Call us<br />23348789987712</a>
+                    <a href="tel:+447478930565" className="font-bold">Call us<br />+447478930565</a>
                   </div>
                 </div>
               </div>

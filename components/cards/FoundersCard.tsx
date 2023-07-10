@@ -24,7 +24,7 @@ const FoundersCard = ({ Props, index }: { Props: FoundersCardProps, index: numbe
 
   return (
     <>
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className=" md:w-[50%] w-full">
+      <motion.div variants={fadeIn("up", "teen", index * 0.1, 0.3)} className=" md:w-[50%] w-full">
         <Tilt
           transitionSpeed={8000}
           className="w-full p-4 border shadow-lg bg-disruption group rounded-2xl border-t-welcoming border-r-inspiration border-l-white border-b-disruption">

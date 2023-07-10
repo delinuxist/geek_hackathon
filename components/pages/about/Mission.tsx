@@ -1,20 +1,20 @@
 'use client'
-import {motion} from 'framer-motion';
-import {textVariant} from '@/core/utils/motion';
+import { motion } from 'framer-motion';
+import { textVariant, fadeIn } from '@/core/utils/motion';
 import withAnimate from '../../hoc/WithAnimate';
-import {ImageSlider} from '../../utils';
-import {about_slider} from '@/core/shared/constants';
+import { ImageSlider } from '../../utils';
+import { about_slider } from '@/core/shared/constants';
 
 const Mission = () => {
     return (
         <div
-            className="max-w-[100rem] items-center mx-auto flex flex-col md:grid md:grid-cols-2 padding-x padding-y gap-10 mb-4">
+            className="max-w-[100rem] items-start mx-auto flex flex-col md:grid md:grid-cols-2 padding-x padding-y gap-10 mb-4">
             <div>
                 <motion.div variants={textVariant(0.1)}>
                     <p className="text-2xl">Company&apos;s</p>
                     <h1>Mission</h1>
                 </motion.div>
-                <motion.div>
+                <motion.div variants={fadeIn("", "", 0.1, 1)}>
                     <p>
                         Our mission is to make a difference in the world of digital technology, specifically in Ghana and
                         the emerging skills of a digitally enabled workforce. We are building an organization that
@@ -23,7 +23,7 @@ const Mission = () => {
                 </motion.div>
             </div>
             <div className={'bg-white h-[25rem] w-[100%] rounded-2xl'}>
-                <ImageSlider images={about_slider}/>
+                <ImageSlider images={about_slider} />
             </div>
         </div>
     )

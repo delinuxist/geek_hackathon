@@ -11,7 +11,7 @@ import 'react-vertical-timeline-component/style.min.css'
 
 const History = () => {
   return (
-    <div className="relative min-h-[65vh] text-white bg-black">
+    <div className="relative min-h-[65vh] text-white bg-black rounded-3xl">
       <div className="max-w-[100rem] mx-auto">
         <div className="absolute top-0 left-0 w-full h-full ">
           <Image src={"https://www.webdew.com/hubfs/wdDotted-bg.svg"} fill alt="dotted-bg" className="z-[0.1px] object-cover opacity-5" />
