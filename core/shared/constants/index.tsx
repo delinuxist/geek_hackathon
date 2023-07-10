@@ -1,4 +1,9 @@
-import { envBlog, iotExplained, symbolicValues } from "@/public/assets/img";
+import {
+  envBlog,
+  iotExplained,
+  symbolicValues,
+  userIconImg,
+} from "@/public/assets/img";
 import {
   FaGithub,
   FaLinkedin,
@@ -101,24 +106,10 @@ export const values = [
 export const clientReview = [
   {
     review:
-      "The best agency we've worked with so far. They understand our product and are able to add new features with a great focus.",
-    name: "Arynton Senna",
-    title: "Vice president",
-    image: "",
-  },
-  {
-    review:
-      "The best agency we've worked with so far. With great power comes great responsibility. Box for fastest lap.",
-    name: "Max Verstappen",
-    title: "Vice president",
-    image: "",
-  },
-  {
-    review:
-      "The best agency we've worked with so far. They understand our product and are able to add new features with a great focus.",
-    name: "Lewis Hamiltton",
-    title: "Vice president",
-    image: "",
+      "Congratulations to turntabl for winning the Breaking the Status Quo Award at our Member Meeting in London ...",
+    name: "Finos",
+    title: "Finos",
+    image: userIconImg,
   },
 ];
 
@@ -142,6 +133,11 @@ export const faqs = [
     question: "What is TLC?",
     answer:
       "TLC is a training program we offer to all software engineers we employ to help them reach the levels necessary to work on client projects.",
+  },
+  {
+    question: "Can software engineers work with other experts?",
+    answer:
+      "Our projects mainly solve business problems, so our engineers collaborate with diverse stakeholders. Examples include product owners, business analysts, operations teams, and QA.",
   },
 ];
 
