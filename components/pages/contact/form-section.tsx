@@ -65,8 +65,8 @@ export default function FormSection() {
   return (
     <form ref={form} onSubmit={sendEmail}>
       <div className={`rounded-3xl`}>
-        <div className="justify-between items-center flex flex-col p-3">
-          <div className="flex flex-row justify-center items-center flex-wrap">
+        <div className="flex flex-col items-center justify-between p-3">
+          <div className="flex flex-row flex-wrap items-center justify-center">
             <div className={styles.ttContactFormRowItem}>
               <InputLabel label="Name: " />
               <InputField
@@ -117,16 +117,15 @@ export default function FormSection() {
       <ModalWrapper isOpen={showModal} closeModal={closeModal}>
         <div className="w-full mt-2 text-center">
           <h1
-            className={`text-3xl ${
-              content?.success ? "text-green-400" : "text-red-400"
-            }`}
+            className={`text-3xl ${content?.success ? "text-green-400" : "text-red-400"
+              }`}
           >
             {content?.title}
           </h1>
           <div className="w-full mt-4 border-[0.5px] border-software-grey" />
           <div className="mt-5 " />
           <p>{content?.body}</p>
-          <div className="w-full flex justify-center">
+          <div className="flex justify-center w-full">
             {content?.success === true && (
               <Lottie animationData={animationData} className="w-1/2" />
             )}
