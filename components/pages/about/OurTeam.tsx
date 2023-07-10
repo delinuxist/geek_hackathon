@@ -10,7 +10,7 @@ const OurTeam = () => {
 
   return (
 
-    <div className="max-w-[100rem] mx-auto text-white bg-gradient-to-tr from-pixel-black to-disruption padding-x padding-y hover:bg-gradient-to-br">
+    <div className="max-w-[100rem] mx-auto text-white bg-gradient-to-tr from-pixel-black to-disruption padding-x padding-y hover:bg-gradient-to-br rounded-t-3xl">
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -19,7 +19,7 @@ const OurTeam = () => {
         <p className="text-2xl">Meet Our Team</p>
         <h1>Our Team</h1>
       </motion.div>
-      <div className='w-full gap-4 space-y-4 padding-y md:columns-2 lg:columns-3 xlg:columns-4'>
+      <div className='w-full gap-4 space-y-5 padding-y md:columns-2 lg:columns-3 xlg:columns-4'>
         {
           ourPeoples.map((p, index) => (
             <TeamsCard key={p.info.name} Props={{ ...p }} index={index} />
