@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     "Africa",
     "Service",
   ],
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+    { media: "(prefers-color-scheme: light)", color: "#efefef" },
+  ],
 };
 
 export default function Service() {
