@@ -14,7 +14,8 @@ import HeroAboutOne from "./hero_about_1.png";
 import HeroAboutTwo from "./hero_about_2.png";
 import HeroAboutThree from "./hero_about_3.png";
 import HeroAboutFour from "./hero_about_4.png";
-import ThumbsUpWelcoming from './__Turntabl_Digital_Hand_5-73.png'
+import ThumbsUpWelcoming from "./__Turntabl_Digital_Hand_5-73.png";
+import ContactUsBg from "./contact_bg.jpeg";
 
 export {
   logo,
@@ -33,5 +34,6 @@ export {
   HeroAboutTwo,
   HeroAboutThree,
   HeroAboutFour,
-  ThumbsUpWelcoming
+  ThumbsUpWelcoming,
+  ContactUsBg,
 };
