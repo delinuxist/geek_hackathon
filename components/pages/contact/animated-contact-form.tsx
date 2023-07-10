@@ -1,8 +1,5 @@
 "use client";
-import Lottie, { LottieRefCurrentProps } from "lottie-react";
-import animationData from "@/public/assets/json/contact-us.json";
 import FormSection from "./form-section";
-import { useRef } from "react";
 import Image from 'next/image';
 import { ContactUsBg } from '../../../public/assets/img';
 import { motion } from 'framer-motion';
@@ -13,7 +10,7 @@ import { ImPhone } from 'react-icons/im';
 
 
 const AnimatedContactFormSection = () => {
-  const lottieRef = useRef<LottieRefCurrentProps>(null)
+
   return (
     <div className="min-h-[calc(100vh-3.5rem)] w-full">
       <div className="h-[50vh] w-full -z-10 relative">
@@ -64,22 +61,3 @@ const AnimatedContactFormSection = () => {
 }
 
 export default withAnimate(AnimatedContactFormSection);
-
-
-{/* <div className="flex flex-col lg:flex-row">
-          <div className="flex justify-center max-w-5xl lg:w-1/3">
-            <Lottie
-              onMouseEnter={() => {
-                lottieRef.current?.setSpeed(3)
-              }}
-              onMouseLeave={() => {
-                lottieRef.current?.setSpeed(1)
-              }}
-              lottieRef={lottieRef}
-              animationData={animationData}
-              className="w-1/4 lg:w-full" />
-          </div>
-          <div className="flex items-center">
-            <FormSection />
-          </div>
-        </div> */}
