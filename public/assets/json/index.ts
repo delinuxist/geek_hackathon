@@ -6,6 +6,7 @@ import ProgrammingEffect from "./programming-effect.json";
 import WebDevelopment from "./web-development.json";
 import CodingPage from "./coding-pages-in-light-blue.json";
 import ServiceEffect from "./service-effect.json"
+import Robot404 from "./NotFound.json"
 
 export {
     Mobile,
@@ -16,4 +17,5 @@ export {
     ServiceEffect,
     CloudNetwork,
     DeveloperSkills,
+    Robot404,
 };
