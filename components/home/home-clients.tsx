@@ -18,7 +18,8 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import "swiper/css/bundle";
 import { useEffect, useState } from "react";
-import { partners } from '../../core/shared/constants/home';
+import { partners } from "../../core/shared/constants/home";
+import Partnership from "../pages/services/partnerships";
 
 export default function HomeClients() {
   const [swiper, setSwiper] = useState<Swiper | null>(null);
@@ -35,19 +36,22 @@ export default function HomeClients() {
   return (
     <section className="home-client bg-inspiration padding-x py-7" id="clients">
       <div className="h-[10rem] scrollbar-hide w-full flex items-center scroll-smooth overflow-x-scroll gap-20 ">
-        <ul className="flex items-center gap-20 animate-slide">
-          {partners.map((image, index) => (
-            <ul key={index} className="flex items-center gap-20 ">
-              <li className="w-[10rem]">
-                <Image
-                  src={image}
-                  alt={image.src}
-                  priority
-                  draggable={false}
-                />
-              </li>
-            </ul>
-          ))}
+        <ul className="flex items-center gap-96 animate-slide">
+          {partners
+            .concat(partners)
+            .concat(partners)
+            .map((image, index) => (
+              <ul key={index} className="flex items-center gap-20 ">
+                <li className="w-[10rem]">
+                  <Image
+                    src={image}
+                    alt={image.src}
+                    priority
+                    draggable={false}
+                  />
+                </li>
+              </ul>
+            ))}
         </ul>
       </div>
 

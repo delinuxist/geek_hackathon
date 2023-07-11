@@ -34,11 +34,11 @@ module.exports = {
       },
       keyframes: {
         slideLeft: {
-          "100%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(-35.45%)" },
         },
       },
       animation: {
-        slide: "slideLeft 5s linear infinite",
+        slide: "slideLeft 10s linear infinite",
       },
     },
   },
