@@ -36,7 +36,7 @@ export default function HomeClients() {
   return (
     <section className="home-client bg-inspiration padding-x py-7" id="clients">
       <div className="h-[10rem] scrollbar-hide w-full flex items-center scroll-smooth overflow-x-scroll gap-20 ">
-        <ul className="flex items-center gap-96 animate-slide">
+        <ul className="flex items-center gap-96 animate-slide hover:pause">
           {partners
             .concat(partners)
             .concat(partners)

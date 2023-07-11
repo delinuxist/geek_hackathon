@@ -32,6 +32,9 @@
 
 @layer utilities {
   /* simple utility-base classes */
+  .pause {
+    animation-play-state: paused;
+  }
 }
 
 @layer components {
