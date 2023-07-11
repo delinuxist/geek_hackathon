@@ -9,7 +9,7 @@ import CustomButton from "../utils/CustomButton";
 export default function HomeHero() {
     const router = useRouter();
 
-    return <section className="min-h-[calc(49vh)] home-hero flex-center bg-center p-3">
+    return <section className="home-hero flex-center h-[668px] bg-center p-3">
       <div className="home-hero-text flex-1 flex-center flex-col">
         <h1 className="text-white text-[96px] max-[1023px]:text-[75px] max-[456px]:text-[60px] max-[280px]:text-[45px]">
           <span className="font-neuebit font-bold leading-none">

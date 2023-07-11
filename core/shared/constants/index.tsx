@@ -127,7 +127,7 @@ export const faqs = [
   {
     question: "Is Turntabl based in Ghana?",
     answer:
-      "Turntabl has offices in London (UK) and Accra (Ghana). But majority of our software engineers and located in Ghana.",
+      "Turntabl has offices in London (UK) and Accra (Ghana). But majority of our software engineers are located in Ghana.",
   },
   {
     question: "What is TLC?",
