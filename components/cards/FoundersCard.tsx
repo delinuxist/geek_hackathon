@@ -33,7 +33,7 @@ const FoundersCard = ({ Props, index }: { Props: FoundersCardProps, index: numbe
             <div className='relative w-full h-[400px]'>
               <div className='absolute top-0 left-0 z-10 hidden w-full h-full rounded-md group-hover:block bg-pixel-black/60' />
               {/* image */}
-              <Image src={Props.image} alt="founders_img" fill className="object-cover rounded-md" />
+              <Image src={Props.image} alt="founders_img" fill className="object-cover rounded-md" priority />
               {/* content */}
               <div
                 className=" group-hover:z-20 group-hover:h-[10rem] duration-300 ease-in-out hidden md:block absolute -z-20 h-[0rem] transform bg-white/80 bottom-0 left-0 w-full border rounded-b-md p-2">

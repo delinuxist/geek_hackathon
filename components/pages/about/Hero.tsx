@@ -27,6 +27,7 @@ const Hero = () => {
                 width={50}
                 height={50}
                 className='m-0'
+                priority
               />
             ))}
           </div>
@@ -53,6 +54,7 @@ const Hero = () => {
               src={HeroAboutOne}
               alt='hero_one'
               className='h-[15rem] w-[15rem] md:h-[26rem] md:w-[26rem]'
+              priority
             />
           </div>
           <div className='-bottom-[5rem] -right-[2rem] absolute md:-bottom-[2rem] md:-right-[4rem]'>
@@ -60,6 +62,7 @@ const Hero = () => {
               src={HeroAboutThree}
               alt='hero_one'
               className='h-[15rem] w-[15rem] md:h-[27rem] md:w-[26rem]'
+              priority
             />
           </div>
         </div>

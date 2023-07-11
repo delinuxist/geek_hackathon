@@ -19,7 +19,7 @@ module.exports = {
         // sans: ["var(--font-worksans"],
       },
       backgroundImage: {
-        "home-hero-number": "url('/assets/img/hero-number-bg.svg')" 
+        "home-hero-number": "url('/assets/img/hero-number-bg.svg')",
       },
       colors: {
         "pixel-black": "#000000",
@@ -32,7 +32,15 @@ module.exports = {
       cursor: {
         "edit-cursor": 'url("/assets/img/ttDigitalHandSm.png"), auto',
       },
+      keyframes: {
+        slideLeft: {
+          "100%": { transform: "translateX(-35.45%)" },
+        },
+      },
+      animation: {
+        slide: "slideLeft 10s linear infinite",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

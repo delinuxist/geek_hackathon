@@ -14,7 +14,7 @@ const Mission = () => {
                     <p className="text-2xl">Company&apos;s</p>
                     <h1>Mission</h1>
                 </motion.div>
-                <motion.div variants={fadeIn("", "", 0.1, 1)}>
+                <motion.div variants={fadeIn("up", "", 0.1, 1)}>
                     <p>
                         Our mission is to make a difference in the world of digital technology, specifically in Ghana and
                         the emerging skills of a digitally enabled workforce. We are building an organization that
