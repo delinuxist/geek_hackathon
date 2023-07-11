@@ -28,12 +28,16 @@ export const metadata: Metadata = {
     "Africa",
     "About",
   ],
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+  ],
 };
 
 export default function About() {
   return (
     <AnimatePresenceWrapper>
-      <div className='relative w-full bg-software-grey'>
+      <div className="relative w-full bg-software-grey">
         <Hero />
         <Mission />
         <History />
